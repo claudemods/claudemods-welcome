@@ -12,7 +12,7 @@ language switching, autostart and the `fix | tweak | dns | launch` command line 
 
 ![Main page, Apps/Tweaks and the claudemods System Tool](docs/screenshots/overview.jpg)
 
-*Left to right: main page · Apps/Tweaks · claudemods System Tool (Themes)*
+*Left to right: main page · Apps/Tweaks · claudemods System Tool (Themes). Clean preview renders recreated from the app layout, with the real wallpapers and colour schemes.*
 
 ## Features
 
