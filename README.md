@@ -8,6 +8,20 @@ Everything the original did is here: the welcome page, info pages, Apps/Tweaks (
 utilities), Troubleshooting, DNS settings (plain / DoT / DoH / DoQ via blocky), the live-ISO installer launcher,
 language switching, autostart and the `fix | tweak | dns | launch` command line interface.
 
+## Screenshots
+
+**Main page**
+
+![Main page](docs/screenshots/main-page.jpg)
+
+**Apps / Tweaks**
+
+![Apps / Tweaks](docs/screenshots/apps-tweaks.jpg)
+
+**claudemods System Tool: Themes**
+
+![claudemods System Tool: Themes](docs/screenshots/system-tool-themes.jpg)
+
 ## Features
 
 **Welcome screen**
