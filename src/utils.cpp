@@ -173,3 +173,16 @@ bool runInTerminal(const QString &command, bool escalate)
 }
 
 } // namespace utils
+
+namespace utils {
+
+bool runInKonsole(const QString &shellCommand)
+{
+    const QString konsole = findExecutable(QStringLiteral("konsole"));
+    if (konsole.isEmpty()) {
+        return false;
+    }
+    return QProcess::startDetached(konsole, {QStringLiteral("-e"), QStringLiteral("bash"), QStringLiteral("-c"), shellCommand});
+}
+
+} // namespace utils

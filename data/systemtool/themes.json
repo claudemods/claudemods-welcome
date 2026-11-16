@@ -1,11 +1,12 @@
 {
   "wallpapers": [
+    { "id": "apex",         "name": "Apex",         "file": "apex.jpg" },
+    { "id": "spitfire",     "name": "SpitFire",     "file": "spitfire.jpg" },
     { "id": "mustang",      "name": "Mustang",      "file": "mustang.jpg" },
     { "id": "torpedo",      "name": "Torpedo",      "file": "torpedo.jpg" },
     { "id": "mosquito",     "name": "Mosquito",     "file": "mosquito.jpg" },
     { "id": "lancaster",    "name": "Lancaster",    "file": "lancaster.jpg" },
     { "id": "hawker",       "name": "Hawker",       "file": "hawker.jpg" },
-    { "id": "spitfire",     "name": "SpitFire",     "file": "spitfire.jpg" },
     { "id": "plasma-light", "name": "Plasma Light", "file": "plasma-light.png" },
     { "id": "plasma-dark",  "name": "Plasma Dark",  "file": "plasma-dark.png" },
     { "id": "reef",         "name": "Reef",         "file": "reef.png" }

@@ -192,13 +192,8 @@ void launchKwinDebugWindow()
 void launchChrisTitusTool(const RunCmdCallback &run)
 {
     const QString cmd = QStringLiteral("curl -fsSL %1 | sh").arg(QString::fromLatin1(ext::kChrisTitusUrl));
-    const QString konsole = utils::findExecutable(QStringLiteral("konsole"));
-    if (!konsole.isEmpty()) {
-        // It is a TUI: no "press enter" prompt, Konsole closes when the tool exits.
-        if (!QProcess::startDetached(konsole, {QStringLiteral("-e"), QStringLiteral("bash"), QStringLiteral("-c"), cmd})) {
-            qWarning() << "Failed to start konsole";
-        }
-        return;
+    if (utils::runInKonsole(cmd)) {
+        return; // it is a TUI: no "press enter" prompt, Konsole closes when the tool exits
     }
     qWarning() << "konsole not found, using the default terminal helper";
     run(cmd, false);

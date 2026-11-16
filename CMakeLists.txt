@@ -51,6 +51,7 @@ qt_add_qml_module(claudemods-hello
         qml/I18n.qml
         qml/components/HelloButton.qml
         qml/components/BackBar.qml
+        qml/components/ToolCard.qml
         qml/pages/HomePage.qml
         qml/pages/TextPage.qml
         qml/pages/TweaksPage.qml

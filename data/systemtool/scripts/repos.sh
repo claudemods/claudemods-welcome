@@ -1,4 +1,4 @@
-# $1 = testing | kde-unstable | multilib-testing | stable
+# $1 = testing | kde-unstable | multilib-testing | chaotic-off | stable
 backup_conf
 case "$1" in
     testing)
@@ -15,6 +15,9 @@ case "$1" in
     multilib-testing)
         if ! repo_active multilib; then echo "Enable [multilib] first (GPU Drivers -> Enable multilib)."; exit 1; fi
         enable_repo multilib-testing multilib
+        ;;
+    chaotic-off)
+        disable_repo chaotic-aur
         ;;
     stable)
         for r in core-testing extra-testing multilib-testing kde-unstable gnome-unstable; do disable_repo "$r"; done

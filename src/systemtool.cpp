@@ -254,7 +254,8 @@ QVariantList SystemTool::actions(const QString &category) const
                                    {QStringLiteral("title"), a.value(QStringLiteral("title")).toString()},
                                    {QStringLiteral("description"), a.value(QStringLiteral("description")).toString()},
                                    {QStringLiteral("kind"), a.value(QStringLiteral("kind")).toString(QStringLiteral("terminal"))},
-                                   {QStringLiteral("confirm"), a.value(QStringLiteral("confirm")).toString()}});
+                                   {QStringLiteral("confirm"), a.value(QStringLiteral("confirm")).toString()},
+                                   {QStringLiteral("page"), a.value(QStringLiteral("page")).toString()}});
         }
     }
     return out;
@@ -306,6 +307,17 @@ void SystemTool::runAction(const QString &id)
         if (!QProcess::startDetached(path, args)) {
             notify(2, QStringLiteral("Could not start '%1'.").arg(program));
         }
+    } else if (kind == QLatin1String("tui")) {
+        // a terminal UI program (for example claude-codex): open it in Konsole
+        const QString program = a.value(QStringLiteral("program")).toString();
+        const QString path = utils::findExecutable(program);
+        if (path.isEmpty()) {
+            notify(2, QStringLiteral("'%1' is not installed. Install it first, then try again.").arg(program));
+            return;
+        }
+        if (!utils::runInKonsole(QStringLiteral("\"%1\"").arg(path))) {
+            (void)QtConcurrent::run([path]() { utils::runInTerminal(path, false); });
+        }
     } else if (kind == QLatin1String("terminal")) {
         const QString script = buildScript(a);
         const bool escalate = a.value(QStringLiteral("escalate")).toBool();
@@ -315,7 +327,7 @@ void SystemTool::runAction(const QString &id)
         }
         (void)QtConcurrent::run([script, escalate]() { utils::runInTerminal(script, escalate); });
     }
-    // "appimage" is handled by the UI (file picker -> integrateAppImage)
+    // "appimage" and "page" are handled by the UI (file picker / page switch)
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -428,23 +440,6 @@ QVariantList SystemTool::colorSchemes() const
                                {QStringLiteral("installed"), installed || e.system}});
     }
     return out;
-}
-
-void SystemTool::installColorSchemes()
-{
-    QDir().mkpath(userColorDir());
-    int count = 0;
-    const QDir bundled(QStringLiteral(":/data/color-schemes"));
-    for (const QString &f : bundled.entryList({QStringLiteral("*.colors")}, QDir::Files)) {
-        const QString target = userColorDir() + QLatin1Char('/') + f;
-        QFile::remove(target); // overwrite, like `unzip -o` did
-        if (QFile::copy(bundled.filePath(f), target)) {
-            QFile::setPermissions(target, QFile::ReadOwner | QFile::WriteOwner | QFile::ReadGroup | QFile::ReadOther);
-            ++count;
-        }
-    }
-    emit colorSchemesChanged();
-    notify(0, QStringLiteral("%1 colour schemes were installed to ~/.local/share/color-schemes. Pick one to apply it.").arg(count));
 }
 
 void SystemTool::applyColorScheme(const QString &id)

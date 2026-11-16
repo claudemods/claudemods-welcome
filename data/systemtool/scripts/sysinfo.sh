@@ -1,0 +1,12 @@
+. /etc/os-release 2>/dev/null
+echo "System   : ${PRETTY_NAME:-unknown} ($(uname -m))"
+echo "Kernel   : $(uname -r)"
+echo "Uptime   : $(uptime -p | sed "s/^up //")"
+echo "Packages : $(pacman -Qq | wc -l) installed ($(pacman -Qeq | wc -l) explicit)"
+echo "Shell    : $(basename "$SHELL")"
+echo "Desktop  : ${XDG_CURRENT_DESKTOP:-unknown} $(plasmashell --version 2>/dev/null | awk "{print \$2}")"
+echo "Session  : ${XDG_SESSION_TYPE:-unknown}"
+echo "CPU      : $(grep -m1 "model name" /proc/cpuinfo | cut -d: -f2 | sed "s/^ //")"
+echo "GPU      : $(lspci 2>/dev/null | grep -Ei "vga|3d" | cut -d: -f3 | sed "s/^ //" | paste -sd "; ")"
+echo "Memory   : $(free -h | awk "/Mem:/ {print \$3 \" / \" \$2}")"
+echo "Disk /   : $(df -h / | awk "NR==2 {print \$3 \" / \" \$2 \" (\" \$5 \")\"}")"

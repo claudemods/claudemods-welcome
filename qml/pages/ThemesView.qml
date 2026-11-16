@@ -3,8 +3,8 @@ import ClaudeMods.Hello
 import QtQuick.Controls
 import QtQuick.Layouts
 
-// Desktop wallpapers (photo buttons) and named colour schemes. Same commands as the old Theme
-// Changer: plasma-apply-wallpaperimage / plasma-apply-colorscheme.
+// Wallpaper photo grid and named colour chips. Same commands as the old Theme Changer:
+// plasma-apply-wallpaperimage / plasma-apply-colorscheme.
 Item {
     id: view
 
@@ -18,7 +18,8 @@ Item {
     }
 
     ColumnLayout {
-        anchors.fill: parent
+        anchors.left: parent.left
+        anchors.right: parent.right
         spacing: 6
 
         Label {
@@ -26,117 +27,153 @@ Item {
             Layout.fillWidth: true
             wrapMode: Text.WordWrap
             color: "#ffb86c"
-            text: "KDE Plasma tools (plasma-apply-wallpaperimage / plasma-apply-colorscheme) were not found, so the " +
-                  "buttons below will not work on this desktop."
+            font.pointSize: Qt.application.font.pointSize * 0.85
+            text: "KDE Plasma tools (plasma-apply-wallpaperimage / plasma-apply-colorscheme) were not found: " +
+                  "the buttons below need a Plasma desktop."
         }
 
         Label {
-            text: "Wallpapers"
-            font.bold: true
+            text: "WALLPAPERS"
+            font.pointSize: Qt.application.font.pointSize * 0.75
+            font.letterSpacing: 1.2
+            opacity: 0.6
         }
 
-        // --- photo buttons -----------------------------------------------------------------
-        Flow {
+        // --- wallpaper photo buttons (5 per row) -------------------------------------------
+        GridLayout {
             Layout.fillWidth: true
-            spacing: 8
+            columns: 5
+            columnSpacing: 8
+            rowSpacing: 8
 
             Repeater {
                 model: SystemTool.wallpapers()
 
-                Button {
+                Item {
                     id: photo
                     required property var modelData
 
-                    width: 150
-                    padding: 4
-                    enabled: modelData.available
-                    onClicked: SystemTool.applyWallpaper(modelData.id)
+                    Layout.fillWidth: true
+                    Layout.preferredWidth: 1
+                    implicitHeight: width * 9 / 16
+                    opacity: modelData.available ? 1.0 : 0.45
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: if (modelData.available) SystemTool.applyWallpaper(modelData.id)
+                    Accessible.role: Accessible.Button
+                    Accessible.name: modelData.name
 
-                    ToolTip.visible: hovered
-                    ToolTip.delay: 400
-                    ToolTip.text: modelData.available ? "Set \"" + modelData.name + "\" as the desktop wallpaper"
-                                                      : "The wallpaper file is not installed"
-
-                    contentItem: ColumnLayout {
-                        spacing: 2
-                        Image {
-                            Layout.alignment: Qt.AlignHCenter
-                            Layout.preferredWidth: 142
-                            Layout.preferredHeight: 80
-                            source: photo.modelData.thumb
-                            fillMode: Image.PreserveAspectCrop
-                            asynchronous: true
-                            smooth: true
-                        }
+                    Image {
+                        id: pic
+                        anchors.fill: parent
+                        source: photo.modelData.thumb
+                        fillMode: Image.PreserveAspectCrop
+                        asynchronous: true
+                        smooth: true
+                    }
+                    Rectangle { // caption strip
+                        anchors.left: parent.left
+                        anchors.right: parent.right
+                        anchors.bottom: parent.bottom
+                        height: 20
+                        color: "#aa000000"
                         Label {
-                            Layout.alignment: Qt.AlignHCenter
+                            anchors.fill: parent
+                            anchors.leftMargin: 6
+                            verticalAlignment: Text.AlignVCenter
                             text: photo.modelData.name
+                            color: "white"
                             font.bold: true
+                            font.pointSize: Qt.application.font.pointSize * 0.8
+                            elide: Text.ElideRight
                         }
                     }
+                    Rectangle { // hover / focus frame
+                        anchors.fill: parent
+                        color: "transparent"
+                        border.width: (photoMouse.containsMouse || photo.activeFocus) ? 2 : 1
+                        border.color: (photoMouse.containsMouse || photo.activeFocus) ? "#1fb59a" : "#44ffffff"
+                        radius: 3
+                    }
+                    MouseArea {
+                        id: photoMouse
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        enabled: photo.modelData.available
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: SystemTool.applyWallpaper(photo.modelData.id)
+                    }
+                    ToolTip.visible: photoMouse.containsMouse
+                    ToolTip.delay: 450
+                    ToolTip.text: photo.modelData.available ? "Set \"" + photo.modelData.name + "\" as the wallpaper"
+                                                            : "This wallpaper file is not installed"
                 }
             }
         }
 
         Label {
-            Layout.topMargin: 4
-            text: "Colours"
-            font.bold: true
+            Layout.topMargin: 6
+            text: "COLOURS"
+            font.pointSize: Qt.application.font.pointSize * 0.75
+            font.letterSpacing: 1.2
+            opacity: 0.6
         }
 
-        // --- colour buttons (named) --------------------------------------------------------
-        Flow {
+        // --- named colour chips (5 per row) -------------------------------------------------
+        GridLayout {
             Layout.fillWidth: true
-            spacing: 6
+            columns: 5
+            columnSpacing: 6
+            rowSpacing: 6
 
             Repeater {
                 model: view.colors
 
-                Button {
-                    id: swatch
+                Rectangle {
+                    id: chip
                     required property var modelData
 
-                    leftPadding: 8
-                    rightPadding: 12
-                    topPadding: 5
-                    bottomPadding: 5
-                    onClicked: SystemTool.applyColorScheme(modelData.id)
+                    Layout.fillWidth: true
+                    Layout.preferredWidth: 1
+                    implicitHeight: 30
+                    radius: 6
+                    color: chipMouse.pressed ? "#55ffffff" : chipMouse.containsMouse ? "#38ffffff" : "#22ffffff"
+                    border.width: 1
+                    border.color: chipMouse.containsMouse ? "#1fb59a" : "#33ffffff"
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: SystemTool.applyColorScheme(modelData.id)
+                    Accessible.role: Accessible.Button
+                    Accessible.name: modelData.name
 
-                    ToolTip.visible: hovered
-                    ToolTip.delay: 400
-                    ToolTip.text: "Apply the colour scheme \"" + modelData.name + "\""
+                    RowLayout {
+                        anchors.fill: parent
+                        anchors.leftMargin: 6
+                        anchors.rightMargin: 6
+                        spacing: 6
 
-                    contentItem: RowLayout {
-                        spacing: 8
                         // two-tone chip: window background | accent colour
                         Row {
-                            Rectangle { width: 14; height: 22; radius: 3; color: swatch.modelData.bg; border.color: "#66ffffff" }
-                            Rectangle { width: 14; height: 22; radius: 3; color: swatch.modelData.accent; border.color: "#66ffffff" }
+                            Rectangle { width: 11; height: 18; radius: 2; color: chip.modelData.bg; border.color: "#77ffffff" }
+                            Rectangle { width: 11; height: 18; radius: 2; color: chip.modelData.accent; border.color: "#77ffffff" }
                         }
-                        Label { text: swatch.modelData.name }
+                        Label {
+                            Layout.fillWidth: true
+                            text: chip.modelData.name
+                            elide: Text.ElideRight
+                            font.pointSize: Qt.application.font.pointSize * 0.9
+                        }
                     }
+                    MouseArea {
+                        id: chipMouse
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: SystemTool.applyColorScheme(chip.modelData.id)
+                    }
+                    ToolTip.visible: chipMouse.containsMouse
+                    ToolTip.delay: 450
+                    ToolTip.text: "Apply the colour scheme \"" + modelData.name + "\""
                 }
             }
         }
-
-        RowLayout {
-            Layout.topMargin: 6
-            spacing: 10
-
-            HelloButton {
-                label: "Install all colour schemes"
-                tip: "Copies the bundled colour schemes to ~/.local/share/color-schemes"
-                onClicked: SystemTool.installColorSchemes()
-            }
-            Label {
-                Layout.fillWidth: true
-                wrapMode: Text.WordWrap
-                opacity: 0.75
-                font.pointSize: Qt.application.font.pointSize * 0.85
-                text: "Colour buttons install their scheme automatically when needed; this installs every scheme at once."
-            }
-        }
-
-        Item { Layout.fillHeight: true }
     }
 }

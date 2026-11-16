@@ -28,6 +28,9 @@ bool runCmd(const QString &cmd, bool escalate, bool forwardOutput = true);
 QString scriptsDir();
 /// Runs `command` in a terminal window (the user presses enter to close it); `escalate` = as root via pkexec.
 bool runInTerminal(const QString &command, bool escalate);
+/// Opens `shellCommand` in Konsole (for TUI programs: no "press enter" prompt, Konsole closes when it exits).
+/// Returns false when Konsole is not installed.
+bool runInKonsole(const QString &shellCommand);
 
 /// `pkexec args...` (arguments passed directly, no shell).
 bool pkexecCmd(const QStringList &args);

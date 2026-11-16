@@ -3,87 +3,117 @@ import ClaudeMods.Hello
 import QtQuick.Controls
 import QtQuick.Layouts
 
-// claudemods System Tool: one hub with every tool behind a section button.
-// Back arrow: section -> hub -> Apps/Tweaks.
+// claudemods System Tool: sidebar with every section, content grid on the right.
+// The arrow at the top of the sidebar goes back to Apps/Tweaks.
 Item {
     id: page
 
-    /// "" = the hub, otherwise a category id from data/systemtool/actions.json
-    property string section: ""
+    /// category id from data/systemtool/actions.json
+    property string section: "themes"
 
     readonly property var categories: SystemTool.categories()
     readonly property var current: {
         for (let i = 0; i < categories.length; ++i)
             if (categories[i].id === section)
                 return categories[i]
-        return null
+        return categories.length > 0 ? categories[0] : null
     }
 
-    ColumnLayout {
+    RowLayout {
         anchors.fill: parent
-        anchors.margins: 10
-        spacing: 6
+        anchors.margins: 8
+        spacing: 10
 
-        BackBar {
-            custom: true
-            title: page.current ? "claudemods System Tool — " + page.current.title : "claudemods System Tool"
-            onActivated: {
-                if (page.section !== "")
-                    page.section = ""
-                else
-                    ApplicationWindow.window.showPage("tweaks")
-            }
-        }
-
-        // --- hub ---------------------------------------------------------------------------
-        GridLayout {
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+        // --- sidebar ----------------------------------------------------------------------
+        Rectangle {
+            Layout.preferredWidth: 176
             Layout.fillHeight: true
-            visible: page.section === ""
-            columns: 3
-            rowSpacing: 14
-            columnSpacing: 14
+            radius: 10
+            color: "#55000000"
+            border.color: "#22ffffff"
 
-            Repeater {
-                model: page.categories
+            ColumnLayout {
+                anchors.fill: parent
+                anchors.margins: 6
+                spacing: 2
 
-                ColumnLayout {
-                    id: card
-                    required property var modelData
-
-                    Layout.preferredWidth: 230
-                    spacing: 4
-
-                    Button {
-                        Layout.fillWidth: true
-                        Layout.preferredHeight: 96
-                        text: card.modelData.title
-                        icon.name: card.modelData.icon
-                        icon.width: 40
-                        icon.height: 40
-                        display: AbstractButton.TextUnderIcon
-                        font.bold: true
-                        font.pointSize: Qt.application.font.pointSize * 1.15
-                        onClicked: page.section = card.modelData.id
+                RowLayout {
+                    Layout.fillWidth: true
+                    ToolButton {
+                        text: "←"
+                        font.pointSize: Qt.application.font.pointSize * 1.2
+                        Accessible.name: "Back to Apps/Tweaks"
+                        ToolTip.visible: hovered
+                        ToolTip.text: "Back to Apps/Tweaks"
+                        onClicked: ApplicationWindow.window.showPage("tweaks")
                     }
                     Label {
                         Layout.fillWidth: true
-                        horizontalAlignment: Text.AlignHCenter
-                        wrapMode: Text.WordWrap
-                        text: card.modelData.description
-                        opacity: 0.8
-                        font.pointSize: Qt.application.font.pointSize * 0.88
+                        text: "System Tool"
+                        font.bold: true
+                        elide: Text.ElideRight
                     }
+                }
+
+                Rectangle { Layout.fillWidth: true; Layout.preferredHeight: 1; color: "#22ffffff" }
+
+                Repeater {
+                    model: page.categories
+
+                    ItemDelegate {
+                        id: nav
+                        required property var modelData
+
+                        Layout.fillWidth: true
+                        implicitHeight: 34
+                        text: modelData.title
+                        icon.name: modelData.icon
+                        icon.width: 18
+                        icon.height: 18
+                        highlighted: page.section === modelData.id
+                        font.pointSize: Qt.application.font.pointSize * 0.95
+                        onClicked: page.section = modelData.id
+                    }
+                }
+
+                Item { Layout.fillHeight: true }
+
+                Label {
+                    Layout.fillWidth: true
+                    Layout.margins: 6
+                    text: "claudemods"
+                    opacity: 0.45
+                    font.pointSize: Qt.application.font.pointSize * 0.75
                 }
             }
         }
 
-        // --- section content ---------------------------------------------------------------
-        Loader {
+        // --- content ----------------------------------------------------------------------
+        ColumnLayout {
             Layout.fillWidth: true
             Layout.fillHeight: true
-            active: page.current !== null
-            sourceComponent: page.current && page.current.view === "themes" ? themesComponent : actionsComponent
+            spacing: 6
+
+            ColumnLayout {
+                spacing: 0
+                Label {
+                    text: page.current ? page.current.title : ""
+                    font.bold: true
+                    font.pointSize: Qt.application.font.pointSize * 1.25
+                }
+                Label {
+                    text: page.current ? page.current.description : ""
+                    opacity: 0.65
+                    font.pointSize: Qt.application.font.pointSize * 0.85
+                }
+            }
+
+            Loader {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                active: page.current !== null
+                sourceComponent: page.current && page.current.view === "themes" ? themesComponent : actionsComponent
+            }
         }
     }
 

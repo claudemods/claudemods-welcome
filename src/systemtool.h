@@ -34,7 +34,6 @@ public:
     Q_INVOKABLE void applyWallpaper(const QString &id);
     Q_INVOKABLE QVariantList colorSchemes() const;
     Q_INVOKABLE void applyColorScheme(const QString &id);
-    Q_INVOKABLE void installColorSchemes();
 
     Q_INVOKABLE void integrateAppImage(const QUrl &file);
 
