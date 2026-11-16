@@ -8,6 +8,7 @@
 #include "tweak.h"
 #include "utils.h"
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QDesktopServices>
 #include <QDir>
@@ -278,7 +279,7 @@ Backend::Backend(QObject *parent)
     m_isIso = QFileInfo::exists(m_prefs.value(QStringLiteral("live_path")).toString()) &&
               utils::checkRegularFile(m_prefs.value(QStringLiteral("installer_path")).toString());
 
-    m_autostart = QFileInfo::exists(utils::fixPath(m_prefs.value(QStringLiteral("autostart_path")).toString()));
+    m_autostart = QFileInfo(utils::fixPath(m_prefs.value(QStringLiteral("autostart_path")).toString())).isFile();
 
     if (!m_isIso) {
         m_hasNmcli = nm::isAvailable();
@@ -377,20 +378,38 @@ QString Backend::pageText(const QString &name) const
 
 void Backend::setAutostart(bool enabled)
 {
+    // A real .desktop file in the autostart folder (not a symlink to /usr/share/applications, which
+    // dangles when the app was not installed). Exec points at the binary that is running now.
     const QString autostartPath = utils::fixPath(m_prefs.value(QStringLiteral("autostart_path")).toString());
-    const QString desktopPath = m_prefs.value(QStringLiteral("desktop_path")).toString();
     QDir().mkpath(QFileInfo(autostartPath).absolutePath());
-    if (enabled && !utils::checkRegularFile(autostartPath)) {
-        QFile::remove(autostartPath); // drop a dangling link
-        if (!QFile::link(desktopPath, autostartPath)) {
-            qWarning() << "Failed to create autostart link" << autostartPath;
+
+    if (enabled) {
+        QString exe = QCoreApplication::applicationFilePath();
+        if (exe.contains(QLatin1Char(' '))) {
+            exe = QLatin1Char('"') + exe + QLatin1Char('"');
         }
-    } else if (!enabled && QFileInfo(autostartPath).isSymLink()) {
-        QFile::remove(autostartPath);
-    } else if (!enabled && utils::checkRegularFile(autostartPath)) {
-        QFile::remove(autostartPath);
+        QFile::remove(autostartPath); // replaces an old symlink or stale entry
+        QFile f(autostartPath);
+        if (f.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text)) {
+            const QString entry = QStringLiteral(
+                                      "[Desktop Entry]\n"
+                                      "Type=Application\n"
+                                      "Name=claudemods hello\n"
+                                      "Exec=%1\n"
+                                      "Icon=%2\n"
+                                      "Terminal=false\n"
+                                      "StartupNotify=false\n"
+                                      "X-GNOME-Autostart-enabled=true\n")
+                                      .arg(exe, QString::fromLatin1(ext::kAppId));
+            f.write(entry.toUtf8());
+        } else {
+            qWarning() << "Failed to write autostart entry" << autostartPath << f.errorString();
+        }
+    } else {
+        QFile::remove(autostartPath); // also removes a symlink
     }
-    m_autostart = QFileInfo::exists(autostartPath);
+
+    m_autostart = QFileInfo(autostartPath).isFile();
     emit autostartChanged();
 }
 

@@ -192,7 +192,10 @@ Item {
             Label { text: I18n.t("launch-start-label") }
             Switch {
                 checked: Backend.autostart
-                onToggled: Backend.autostart = checked
+                onToggled: {
+                    Backend.autostart = checked
+                    checked = Qt.binding(() => Backend.autostart)
+                }
             }
         }
     }
