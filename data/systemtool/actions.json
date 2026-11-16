@@ -117,6 +117,14 @@
       ]
     },
     {
+      "id": "dns",
+      "title": "DNS Manager",
+      "description": "Pick a DNS provider for your connection",
+      "icon": "network-wired",
+      "view": "dns",
+      "requires": "nmcli"
+    },
+    {
       "id": "codex",
       "title": "Claude Codex",
       "description": "The claude-codex terminal app",
@@ -136,9 +144,6 @@
         { "id": "appimage", "title": "Add AppImage to menu",
           "description": "Convert an AppImage into an application menu entry with its icon",
           "kind": "appimage" },
-        { "id": "dns", "title": "DNS settings",
-          "description": "Change DNS provider, DoT / DoH / DoQ",
-          "kind": "page", "page": "dns", "requires": "nmcli" },
         { "id": "sysinfo", "title": "System information",
           "description": "OS, kernel, packages, CPU, GPU, memory, disk",
           "script": "sysinfo.sh" },

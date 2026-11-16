@@ -227,6 +227,10 @@ QVariantList SystemTool::categories() const
     QVariantList out;
     for (const QJsonValue &v : m_actions.value(QStringLiteral("categories")).toArray()) {
         const QJsonObject c = v.toObject();
+        const QString needed = c.value(QStringLiteral("requires")).toString();
+        if (!needed.isEmpty() && utils::findExecutable(needed).isEmpty()) {
+            continue; // hide sections whose tool is missing (e.g. the DNS Manager without NetworkManager)
+        }
         out.append(QVariantMap{{QStringLiteral("id"), c.value(QStringLiteral("id")).toString()},
                                {QStringLiteral("title"), c.value(QStringLiteral("title")).toString()},
                                {QStringLiteral("description"), c.value(QStringLiteral("description")).toString()},

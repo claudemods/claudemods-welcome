@@ -112,7 +112,9 @@ Item {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 active: page.current !== null
-                sourceComponent: page.current && page.current.view === "themes" ? themesComponent : actionsComponent
+                sourceComponent: !page.current ? null
+                                 : page.current.view === "themes" ? themesComponent
+                                 : page.current.view === "dns" ? dnsComponent : actionsComponent
             }
         }
     }
@@ -120,6 +122,10 @@ Item {
     Component {
         id: themesComponent
         ThemesView {}
+    }
+    Component {
+        id: dnsComponent
+        DnsManagerView {}
     }
     Component {
         id: actionsComponent

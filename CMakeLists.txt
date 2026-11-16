@@ -28,6 +28,7 @@ qt_add_executable(claudemods-hello
     src/actions.h        src/actions.cpp
     src/cli.h            src/cli.cpp
     src/dnsdata.h        src/dnsdata.cpp
+    src/dnsmanager.h     src/dnsmanager.cpp
     src/fluent.h         src/fluent.cpp
     src/logger.h         src/logger.cpp
     src/networkmanager.h src/networkmanager.cpp
@@ -60,6 +61,7 @@ qt_add_qml_module(claudemods-hello
         qml/pages/SystemToolPage.qml
         qml/pages/ThemesView.qml
         qml/pages/ActionsView.qml
+        qml/pages/DnsManagerView.qml
 )
 
 qt_add_resources(claudemods-hello "hello_data"

@@ -61,8 +61,9 @@ section (the arrow at its top goes back to Apps/Tweaks) and a grid of tiles on t
 | **Updates** | System update, clear package cache, clear user cache, lock / unlock kernels, rebuild GRUB config, repair Plasma, restart Plasma shell. |
 | **GPU Drivers** | Enable / disable multilib; Intel, Intel + compute, AMD, AMD + Xorg, NVIDIA open / dkms / LTS (32-bit libraries added automatically when multilib is on). |
 | **Repositories** | **Convert Arch to CachyOS** (official `cachyos-repo` script), install the CachyOS kernel, **add / remove Chaotic-AUR**, rank Arch mirrors (reflector), testing repos, KDE unstable, multilib-testing, back to stable. |
+| **DNS Manager** | Your DNSManager v1.04: pick Google, Cloudflare, OpenDNS or Quad9 for a NetworkManager connection, see the DNS currently in use, apply and reset to automatic. Updated: connection picker, optional DNS over TLS, changes apply live (no reconnect, no sudo password). |
 | **Claude Codex** | Opens `claude-codex` in Konsole. |
-| **Tools** | **Add AppImage to menu** (converts an AppImage into a menu entry with its icon), DNS settings, system information, Konsole, Dolphin, System Monitor, Plasma Overview, volume ±20%, Bauh and Stacer (when installed), website and GitHub. |
+| **Tools** | **Add AppImage to menu** (converts an AppImage into a menu entry with its icon), system information, Konsole, Dolphin, System Monitor, Plasma Overview, volume ±20%, Bauh and Stacer (when installed), website and GitHub. |
 
 It is data driven, so adding a tool never needs C++:
 
