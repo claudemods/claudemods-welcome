@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = Màn hình chào mừng của claudemods
+about-dialog-comments = Màn hình chào mừng của claudemods linux
 
 # Tweaks page
 tweaks = chỉnh sửa
@@ -87,8 +87,8 @@ testing-iso-warning = Bạn đang sử dụng ISO bản thử nghiệm, bản th
 tweaksbrowser-label = Phần mềm/Tinh chỉnh
 appbrowser-label = Cài đặt phần mềm
 launch-start-label = Xuất hiện thông báo này khi khởi động
-welcome-title = Chào mừng tới claudemods!
+welcome-title = Chào mừng tới claudemods linux!
 welcome-body =
     Cảm ơn bạn rất nhiều khi đã tham gia cộng đồng của chúng tôi!
 
-    Chúng tôi, những người phát triển nên claudemods, mong rằng bạn sẽ cảm thấy tuyệt vời khi sử dụng claudemods cũng giống như chúng tôi rất vui khi xây dựng lên nó. Các đường dẫn dưới đây sẽ giúp bạn bắt đầu với hệ điều hành mới này. Vì vậy cứ thoải mái sử dụng và tận hưởng đi, và đừng ngần ngại gửi phản hồi cho chúng tôi nhé.
+    Chúng tôi, những người phát triển nên claudemods linux, mong rằng bạn sẽ cảm thấy tuyệt vời khi sử dụng claudemods linux cũng giống như chúng tôi rất vui khi xây dựng lên nó. Các đường dẫn dưới đây sẽ giúp bạn bắt đầu với hệ điều hành mới này. Vì vậy cứ thoải mái sử dụng và tận hưởng đi, và đừng ngần ngại gửi phản hồi cho chúng tôi nhé.

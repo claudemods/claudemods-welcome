@@ -1,6 +1,6 @@
 # O dialógu
 about-dialog-title = claudemods Vitajte
-about-dialog-comments = Úvodná obrazovka pre claudemods
+about-dialog-comments = Úvodná obrazovka pre claudemods linux
 
 # Stránka s vylepšeniami
 tweaks = Vylepšenia
@@ -81,8 +81,8 @@ testing-iso-warning = Používate testovacie ISO, testovacie ISO nie sú považo
 tweaksbrowser-label = Aplikácie/Vylepšenia
 appbrowser-label = Inštalovať aplikácie
 launch-start-label = Spustiť pri štarte
-welcome-title = Vitajte v claudemods!
+welcome-title = Vitajte v claudemods linux!
 welcome-body =
     Ďakujeme, že ste sa pridali k našej komunite!
 
-    My, vývojári claudemods, dúfame, že budete používať claudemods s rovnakým nadšením, s akým ho my vytvárame. Odkazy nižšie vám pomôžu začať s vaším novým operačným systémom. Užite si zážitok a neváhajte nám poslať vašu spätnú väzbu.
+    My, vývojári claudemods linux, dúfame, že budete používať claudemods linux s rovnakým nadšením, s akým ho my vytvárame. Odkazy nižšie vám pomôžu začať s vaším novým operačným systémom. Užite si zážitok a neváhajte nám poslať vašu spätnú väzbu.

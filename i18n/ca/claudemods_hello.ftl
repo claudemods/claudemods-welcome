@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = Benvinguda del claudemods
-about-dialog-comments = Pantalla de benvinguda per al claudemods
+about-dialog-comments = Pantalla de benvinguda per al claudemods linux
 
 # Tweaks page
 tweaks = Retocs
@@ -98,8 +98,8 @@ testing-iso-warning = Useu una imatge ISO de prova. Les ISO de prova no es consi
 tweaksbrowser-label = Aplicacions / Retocs
 appbrowser-label = Instal·leu apliacions
 launch-start-label = Obre-ho a l'inici
-welcome-title = Us donem la benvinguda al claudemods!
+welcome-title = Us donem la benvinguda al claudemods linux!
 welcome-body =
     Moltes mercès per unir-vos a la nostra comunitat!
 
-    Nosaltres, els desenvolupadors del claudemods, esperem que gaudiu d'usar el claudemods tant com a nosaltres ens agrada fer-lo. Els enllaços següents us ajudaran a començar. Gaudiu de l'experiència i no dubteu a enviar-nos-en comentaris.
+    Nosaltres, els desenvolupadors del claudemods linux, esperem que gaudiu d'usar el claudemods linux tant com a nosaltres ens agrada fer-lo. Els enllaços següents us ajudaran a començar. Gaudiu de l'experiència i no dubteu a enviar-nos-en comentaris.

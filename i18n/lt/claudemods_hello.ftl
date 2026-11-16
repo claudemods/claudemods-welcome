@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = claudemods pasveikinimo langas
+about-dialog-comments = claudemods linux pasveikinimo langas
 
 # Tweaks page
 tweaks = Tinkinimas
@@ -102,8 +102,8 @@ testing-iso-warning = Naudojate bandomąją ISO versiją; bandomosios ISO versij
 tweaksbrowser-label = Programos / tinkinimas
 appbrowser-label = Įdiegti programas
 launch-start-label = Paleisti kartu su sistema
-welcome-title = Sveiki atvykę į claudemods!
+welcome-title = Sveiki atvykę į claudemods linux!
 welcome-body =
     Ačiū, kad prisijungėte prie mūsų bendruomenės!
 
-    Mes, claudemods kūrėjai, tikimės, kad naudotis claudemods jums bus taip pat malonu, kaip mums ją kurti. Toliau pateiktos nuorodos padės pradėti darbą su naująja operacine sistema. Tad mėgaukitės patirtimi ir nedvejodami atsiųskite mums savo atsiliepimus.
+    Mes, claudemods linux kūrėjai, tikimės, kad naudotis claudemods linux jums bus taip pat malonu, kaip mums ją kurti. Toliau pateiktos nuorodos padės pradėti darbą su naująja operacine sistema. Tad mėgaukitės patirtimi ir nedvejodami atsiųskite mums savo atsiliepimus.

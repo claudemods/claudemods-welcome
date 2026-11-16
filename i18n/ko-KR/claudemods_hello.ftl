@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = claudemods의 시작 화면
+about-dialog-comments = claudemods linux의 시작 화면
 
 # Tweaks page
 tweaks = 트윅
@@ -86,8 +86,8 @@ testing-iso-warning = 테스트용 ISO를 사용 중입니다. 테스트용 ISO�
 tweaksbrowser-label = 앱/트윅
 appbrowser-label = 앱 설치
 launch-start-label = 시작 시 실행
-welcome-title = claudemods에 오신 것을 환영합니다!
+welcome-title = claudemods linux에 오신 것을 환영합니다!
 welcome-body =
     저희 커뮤니티에 참여해 주셔서 감사합니다!
 
-    저희 claudemods 개발팀은 여러분이 claudemods를 사용하는 것을 저희가 개발하는 것만큼 즐기시기를 바랍니다. 아래 링크들은 여러분의 새로운 운영 체제를 시작하는 데 도움이 될 것입니다. 그러니 claudemods를 즐겁게 경험하시고, 언제든지 저희에게 피드백을 보내주세요.
+    저희 claudemods linux 개발팀은 여러분이 claudemods linux를 사용하는 것을 저희가 개발하는 것만큼 즐기시기를 바랍니다. 아래 링크들은 여러분의 새로운 운영 체제를 시작하는 데 도움이 될 것입니다. 그러니 claudemods linux를 즐겁게 경험하시고, 언제든지 저희에게 피드백을 보내주세요.

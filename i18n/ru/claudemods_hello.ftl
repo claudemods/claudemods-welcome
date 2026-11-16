@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = Приветственный экран claudemods
+about-dialog-comments = Приветственный экран claudemods linux
 
 # Tweaks page
 tweaks = Настройки
@@ -104,8 +104,8 @@ testing-iso-warning = Вы используете тестовую версию 
 tweaksbrowser-label = Приложения/Настройки
 appbrowser-label = Установить ПO
 launch-start-label = Автозапуск
-welcome-title = Добро пожаловать в claudemods!
+welcome-title = Добро пожаловать в claudemods linux!
 welcome-body =
     Благодарим Вас за то, что Вы присоединились к нашему сообществу!
 
-    Мы, разработчики claudemods, надеемся, что пользуясь этой системой, Вы будете испытывать такое же удовольствие, какое испытывали мы, создавая ее. Представленные ниже ссылки помогут Вам начать работу. Наслаждайтесь функционалом claudemods и оставляйте свои отзывы.
+    Мы, разработчики claudemods linux, надеемся, что пользуясь этой системой, Вы будете испытывать такое же удовольствие, какое испытывали мы, создавая ее. Представленные ниже ссылки помогут Вам начать работу. Наслаждайтесь функционалом claudemods linux и оставляйте свои отзывы.

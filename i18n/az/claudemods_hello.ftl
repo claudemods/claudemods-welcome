@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = claudemods salamlama ekranı
+about-dialog-comments = claudemods linux salamlama ekranı
 
 # Tweaks page
 tweaks = Ayarlar
@@ -102,7 +102,7 @@ testing-iso-warning = Siz sınaq üçün nəzərdə tutulan ISO istifadə edirsi
 tweaksbrowser-label = Tətbiqlər/Ayarlar
 appbrowser-label = Tətbiqlər quraşdırmaq
 launch-start-label = Sistemə girişdə açmaq
-welcome-title = claudemods-yə xoş gəldiniz!
+welcome-title = claudemods linux-yə xoş gəldiniz!
 welcome-body =
     Cəmiyyətimizə qoşulduğunuz üçün təşəkkür edirik!
 

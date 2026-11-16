@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = claudemods Hoş Geldin Ekranı
+about-dialog-comments = claudemods linux Hoş Geldin Ekranı
 
 # Tweaks page
 tweaks = İnce ayarlar
@@ -106,8 +106,8 @@ testing-iso-warning = Test amaçlı bir ISO kullanıyorsunuz, test ISO'ları kar
 tweaksbrowser-label = Uygulamalar/İyileştirmeler
 appbrowser-label = Uygulama kur
 launch-start-label = Başlangıçta aç
-welcome-title = claudemods'e Hoş Geldiniz!
+welcome-title = claudemods linux'e Hoş Geldiniz!
 welcome-body =
     Aramıza katıldığınız için size çok teşekkür ederiz!
 
-    claudemods Geliştirici Ekibi olarak, bizler yapımında ne kadar zevk aldıysak, sizlerin de claudemods'i kullanırken o kadar memnun kalacağınızı umut ediyoruz. Aşağıdaki bağlantılar, yeni işletim sisteminizi kullanma konusunda sizlere yardımcı olacaktır. Bu vesileyle tecrübenizin tadını çıkarın, fikir ve düşüncelerinizi bizlerle paylaşmaktan çekinmeyin.
+    claudemods linux Geliştirici Ekibi olarak, bizler yapımında ne kadar zevk aldıysak, sizlerin de claudemods linux'i kullanırken o kadar memnun kalacağınızı umut ediyoruz. Aşağıdaki bağlantılar, yeni işletim sisteminizi kullanma konusunda sizlere yardımcı olacaktır. Bu vesileyle tecrübenizin tadını çıkarın, fikir ve düşüncelerinizi bizlerle paylaşmaktan çekinmeyin.

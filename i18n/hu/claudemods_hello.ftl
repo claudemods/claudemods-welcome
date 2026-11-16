@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = Üdvözlőképernyő a claudemods-hez
+about-dialog-comments = Üdvözlőképernyő a claudemods linux-hez
 
 # Tweaks page
 tweaks = Finomhangolások
@@ -102,8 +102,8 @@ testing-iso-warning = Ez egy tesztelésre szánt ISO, nem számít stabilnak és
 tweaksbrowser-label = Alkalmazások/Finomhangolások
 appbrowser-label = Alkalmazások telepítése
 launch-start-label = Automatikus indítás
-welcome-title = Üdvözlünk a claudemods-ben!
+welcome-title = Üdvözlünk a claudemods linux-ben!
 welcome-body =
     Köszönjük, hogy csatlakoztál a közösségünkhöz!
 
-    Mi, a claudemods fejlesztői reméljük, hogy legalább annyira élvezni fogod a claudemods használatát, mint amennyire mi élveztük a megalkotását. Az alábbi linkek segítenek az elindulásban az új operációs rendszerrel. Jó szórakozást, és ne habozz visszajelzést küldeni nekünk!
+    Mi, a claudemods linux fejlesztői reméljük, hogy legalább annyira élvezni fogod a claudemods linux használatát, mint amennyire mi élveztük a megalkotását. Az alábbi linkek segítenek az elindulásban az új operációs rendszerrel. Jó szórakozást, és ne habozz visszajelzést küldeni nekünk!

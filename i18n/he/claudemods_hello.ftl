@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = תוכנית קבלת הפנים של claudemods
-about-dialog-comments = תוכנית קבלת פנים עבור claudemods
+about-dialog-comments = תוכנית קבלת פנים עבור claudemods linux
 
 # Tweaks page
 tweaks = התאמות
@@ -88,8 +88,8 @@ testing-iso-warning = מחשבך מריץ ISO לבדיקה, דמויות ISO ל�
 tweaksbrowser-label = יישומים/התאמות
 appbrowser-label = התקנת יישומים
 launch-start-label = הפעלה בעת עליית המערכת
-welcome-title = ברוך בואך אל claudemods!
+welcome-title = ברוך בואך אל claudemods linux!
 welcome-body =
     תודה שהצטרפת לקהילה שלנו!
 
-    אנחנו, מפתחי claudemods, מקווים שיהיה לך כיף להשתמש ב־claudemods כמו שאנחנו נהנים מעבודת הפיתוח שלה. הקישורים הבאים יעזרו לך להתחיל להשתמש במערכת ההפעלה החדשה שלך. מקווים שתהיה לך חוויה מהנה, ולא להסס לשלוח לנו משוב.
+    אנחנו, מפתחי claudemods linux, מקווים שיהיה לך כיף להשתמש ב־claudemods linux כמו שאנחנו נהנים מעבודת הפיתוח שלה. הקישורים הבאים יעזרו לך להתחיל להשתמש במערכת ההפעלה החדשה שלך. מקווים שתהיה לך חוויה מהנה, ולא להסס לשלוח לנו משוב.

@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = claudemods のようこそ画面
+about-dialog-comments = claudemods linux のようこそ画面
 
 # Tweaks page
 tweaks = チューニング
@@ -108,8 +108,8 @@ tweaksbrowser-label = アプリ/チューニング
 appbrowser-label = アプリのインストール
 troubleshooting-label = トラブルシューティング
 launch-start-label = 起動時に表示
-welcome-title = claudemods へようこそ！
+welcome-title = claudemods linux へようこそ！
 welcome-body =
     コミュニティに参加いただきありがとうございます！
 
-    claudemods 開発チーム一同、情熱を持って開発した claudemods を皆さまに楽しんでいただけることを願っています。下のリンクは、はじめてこの OS を利用する場合に役立ちます。claudemods をぜひご活用ください。フィードバックもお待ちしております。
+    claudemods linux 開発チーム一同、情熱を持って開発した claudemods linux を皆さまに楽しんでいただけることを願っています。下のリンクは、はじめてこの OS を利用する場合に役立ちます。claudemods linux をぜひご活用ください。フィードバックもお待ちしております。

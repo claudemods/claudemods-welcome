@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods – Hallo
-about-dialog-comments = Welkomstscherm van claudemods
+about-dialog-comments = Welkomstscherm van claudemods linux
 
 # Tweaks page
 tweaks = Aanpassingen
@@ -80,8 +80,8 @@ testing-iso-warning = U gebruikt een test-ISO, test-ISO's worden niet als stabie
 tweaksbrowser-label = Programma's/Aanpassingen
 appbrowser-label = Programma's installeren
 launch-start-label = Tonen na opstarten
-welcome-title = Welkom op claudemods!
+welcome-title = Welkom op claudemods linux!
 welcome-body =
     Wat fijn dat we je mogen verwelkomen in onze gemeenschap!
 
-    Wij, de claudemods-ontwikkelaars, hopen dat je net zoveel plezier beleeft aan het gebruiken van claudemods als wij dat hebben in de ontwikkeling ervan. Met behulp van onderstaande links kun je jezelf wegwijs maken in dit voor jou nieuwe besturingssysteem. Geniet ervan en stuur ons desnoods wat feedback.
+    Wij, de claudemods linux-ontwikkelaars, hopen dat je net zoveel plezier beleeft aan het gebruiken van claudemods linux als wij dat hebben in de ontwikkeling ervan. Met behulp van onderstaande links kun je jezelf wegwijs maken in dit voor jou nieuwe besturingssysteem. Geniet ervan en stuur ons desnoods wat feedback.

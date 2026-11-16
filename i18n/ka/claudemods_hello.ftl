@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = claudemods-ის მისალმების ეკრანი
+about-dialog-comments = claudemods linux-ის მისალმების ეკრანი
 
 # Tweaks page
 tweaks = ცვლილებები
@@ -115,8 +115,8 @@ tweaksbrowser-label = აპები/ცვლილებები
 appbrowser-label = აპების დაყენება
 troubleshooting-label = პრობლემების მოგვარება
 launch-start-label = გაშვება ჩართვისას
-welcome-title = კეთილი იყოს თქვენი მობრძანება claudemods-ში!
+welcome-title = კეთილი იყოს თქვენი მობრძანება claudemods linux-ში!
 welcome-body =
     მადლობა, რომ შემოუერთდით ჩვენს საზოგადოებას!
 
-    ჩვენ, claudemods-ის დეველოპერები, ვიმედოვნებთ, რომ თქვენ ისე ისიამოვნებთ claudemods-ით, როგორც ჩვენ მისი აგებისას. ბმულები ქვემოთ დაგეხმარებათ, თქვენს ახალ ოპერაციულ სისტემასთან მუშაობა დაიწყოთ. ასე რომ, ისიამოვნეთ და ნუ შეიკავებთ თავს, თქვენი აზრი გაგვიზიაროთ.
+    ჩვენ, claudemods linux-ის დეველოპერები, ვიმედოვნებთ, რომ თქვენ ისე ისიამოვნებთ claudemods linux-ით, როგორც ჩვენ მისი აგებისას. ბმულები ქვემოთ დაგეხმარებათ, თქვენს ახალ ოპერაციულ სისტემასთან მუშაობა დაიწყოთ. ასე რომ, ისიამოვნეთ და ნუ შეიკავებთ თავს, თქვენი აზრი გაგვიზიაროთ.

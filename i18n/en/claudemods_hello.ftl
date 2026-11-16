@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = Welcome screen for claudemods
+about-dialog-comments = Welcome screen for claudemods linux
 
 # Tweaks page
 tweaks = Tweaks
@@ -114,11 +114,11 @@ tweaksbrowser-label = Apps/Tweaks
 appbrowser-label = Install Apps
 troubleshooting-label = Troubleshooting
 launch-start-label = Launch at start
-welcome-title = Welcome to claudemods!
+welcome-title = Welcome to claudemods linux!
 welcome-body =
     Thank you for joining the community!
 
-    I hope you enjoy using claudemods as much as I enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send me your feedback.
+    I hope you enjoy using claudemods linux as much as I enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send me your feedback.
 
 # Chris Titus Tech's Linux tool
 christitus-title = Chris Titus Linux Tool

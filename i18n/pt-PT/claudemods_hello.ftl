@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = Ecrã de boas-vindas do claudemods
+about-dialog-comments = Ecrã de boas-vindas do claudemods linux
 
 # Tweaks page
 tweaks = Ajustes
@@ -79,8 +79,8 @@ testing-iso-warning = Estás a usar uma ISO de teste; as ISOs de teste não são
 tweaksbrowser-label = Aplicações/Ajustes
 appbrowser-label = Instalar Aplicações
 launch-start-label = Iniciar no arranque
-welcome-title = Bem-vindo ao claudemods!
+welcome-title = Bem-vindo ao claudemods linux!
 welcome-body =
     Obrigado por te juntares à nossa comunidade!
 
-    Nós, os programadores do claudemods, esperamos que desfrutes do uso do claudemods tanto quanto nós desfrutamos a construí-lo. As ligações abaixo ajudar-te-ão a começar com o teu novo sistema operativo. Por isso, aproveita a experiência e não hesites em enviar-nos o teu feedback.
+    Nós, os programadores do claudemods linux, esperamos que desfrutes do uso do claudemods linux tanto quanto nós desfrutamos a construí-lo. As ligações abaixo ajudar-te-ão a começar com o teu novo sistema operativo. Por isso, aproveita a experiência e não hesites em enviar-nos o teu feedback.

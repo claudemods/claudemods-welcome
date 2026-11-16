@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods Hello
-about-dialog-comments = claudemods-ի ողջույնի էկրան
+about-dialog-comments = claudemods linux-ի ողջույնի էկրան
 
 # Tweaks page
 tweaks = Կարգավորումներ
@@ -79,8 +79,8 @@ testing-iso-warning = Դուք օգտագործում եք թեստավորմա�
 tweaksbrowser-label = Ծրագրեր/Կարգավորումներ
 appbrowser-label = Տեղադրել ծրագրեր
 launch-start-label = Գործարկել մեկնարկին
-welcome-title = Բարի գալուստ claudemods!
+welcome-title = Բարի գալուստ claudemods linux!
 welcome-body =
     Շնորհակալություն մեր համայնքին միանալու համար:
 
-    Մենք՝ claudemods-ի մշակողներս, հույս ունենք, որ դուք կվայելեք claudemods-ը նույնքան, որքան մենք՝ այն ստեղծելիս: Ստորև բերված հղումները կօգնեն ձեզ սկսել աշխատանքը ձեր նոր օպերացիոն համակարգի հետ: Վայելեք փորձը և մի վարանեք ուղարկել մեզ ձեր կարծիքը:
+    Մենք՝ claudemods linux-ի մշակողներս, հույս ունենք, որ դուք կվայելեք claudemods linux-ը նույնքան, որքան մենք՝ այն ստեղծելիս: Ստորև բերված հղումները կօգնեն ձեզ սկսել աշխատանքը ձեր նոր օպերացիոն համակարգի հետ: Վայելեք փորձը և մի վարանեք ուղարկել մեզ ձեր կարծիքը:

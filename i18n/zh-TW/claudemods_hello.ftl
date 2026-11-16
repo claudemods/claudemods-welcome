@@ -1,6 +1,6 @@
 # About dialog
 about-dialog-title = claudemods 歡迎
-about-dialog-comments = claudemods 的歡迎介面
+about-dialog-comments = claudemods linux 的歡迎介面
 
 # Tweaks page
 tweaks = 調整
@@ -102,8 +102,8 @@ testing-iso-warning = 您正使用測試版的 ISO，測試版 ISO 尚未穩定�
 tweaksbrowser-label = 應用程式／調整
 appbrowser-label = 安裝應用程式
 launch-start-label = 開機時開啟
-welcome-title = 歡迎使用 claudemods！
+welcome-title = 歡迎使用 claudemods linux！
 welcome-body =
     歡迎您加入我們的社群！
 
-    我們是 claudemods 的開發者，希望您能像我們開發時一樣愉快地使用 claudemods！下方的連結將幫助您開始探索您的新作業系統，請盡情享受您的體驗，如果您有任何回饋或意見，請隨時發送給我們！
+    我們是 claudemods linux 的開發者，希望您能像我們開發時一樣愉快地使用 claudemods linux！下方的連結將幫助您開始探索您的新作業系統，請盡情享受您的體驗，如果您有任何回饋或意見，請隨時發送給我們！

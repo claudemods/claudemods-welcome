@@ -1,5 +1,5 @@
 about-dialog-title = claudemods Hello
-about-dialog-comments = claudemods-i tervituskuva
+about-dialog-comments = claudemods linux-i tervituskuva
 
 # Tweaks page
 tweaks = Kohandused
@@ -85,8 +85,8 @@ testing-iso-warning = Kasutate testimiseks mõeldud ISO-d, testimis-ISO-sid ei p
 tweaksbrowser-label = Rakendused/Kohandused
 appbrowser-label = Paigalda rakendusi
 launch-start-label = Käivita käivitamisel
-welcome-title = Tere tulemast claudemods-i!
+welcome-title = Tere tulemast claudemods linux-i!
 welcome-body =
     Täname, et liitusite meie kogukonnaga!
 
-    Meie, claudemods-i arendajad, loodame, et teile meeldib claudemods-i kasutamine sama palju kui meile selle ehitamine. Allolevad lingid aitavad teil oma uue operatsioonisüsteemiga alustada. Nii et nautige kogemust ja ärge kartke meile oma tagasisidet saata.
+    Meie, claudemods linux-i arendajad, loodame, et teile meeldib claudemods linux-i kasutamine sama palju kui meile selle ehitamine. Allolevad lingid aitavad teil oma uue operatsioonisüsteemiga alustada. Nii et nautige kogemust ja ärge kartke meile oma tagasisidet saata.
