@@ -120,15 +120,14 @@ Item {
 
         BackBar { target: "tweaks" }
 
-        ScrollView {
+        Item {
             id: scroll
+            property real availableWidth: width
             Layout.fillWidth: true
             Layout.fillHeight: true
-            contentWidth: availableWidth
-            clip: true
 
             ColumnLayout {
-                width: Math.min(scroll.availableWidth, 640)
+                width: Math.min(scroll.availableWidth, 720)
                 x: (scroll.availableWidth - width) / 2
                 spacing: 8
 
@@ -172,51 +171,62 @@ Item {
                     onLinkActivated: link => Backend.openUrl(link)
                 }
 
-                // --- custom server fields -------------------------------------------------
-                ColumnLayout {
+                // --- custom server fields (only the ones the chosen transport needs) --------
+                GridLayout {
                     Layout.fillWidth: true
                     visible: page.isCustom
-                    spacing: 4
+                    columns: 2
+                    columnSpacing: 10
+                    rowSpacing: 2
 
-                    RowLayout {
+                    ColumnLayout {
                         Layout.fillWidth: true
-                        Label { text: I18n.t("custom-dns-ip", { version: "IPv4" }) }
+                        spacing: 2
+                        Label { text: I18n.t("custom-dns-ip", { version: "IPv4" }); font.pointSize: Qt.application.font.pointSize * 0.9 }
                         TextField {
                             id: ipv4Field
                             Layout.fillWidth: true
                             placeholderText: "e.g. 1.1.1.1,1.0.0.1"
                         }
                     }
-                    RowLayout {
+                    ColumnLayout {
                         Layout.fillWidth: true
-                        Label { text: I18n.t("custom-dns-ip", { version: "IPv6" }) }
+                        spacing: 2
+                        Label { text: I18n.t("custom-dns-ip", { version: "IPv6" }); font.pointSize: Qt.application.font.pointSize * 0.9 }
                         TextField {
                             id: ipv6Field
                             Layout.fillWidth: true
                             placeholderText: "e.g. 2606:4700:4700::1111"
                         }
                     }
-                    RowLayout {
+                    ColumnLayout {
                         Layout.fillWidth: true
-                        Label { text: I18n.t("custom-dns-dot-hostname") }
+                        Layout.columnSpan: (page.dnsType === "doh" || page.dnsType === "doq") ? 1 : 2
+                        visible: page.dnsType !== "plain"
+                        spacing: 2
+                        Label { text: I18n.t("custom-dns-dot-hostname"); font.pointSize: Qt.application.font.pointSize * 0.9 }
                         TextField {
                             id: dotField
                             Layout.fillWidth: true
                             placeholderText: "e.g. dns.example.com"
                         }
                     }
-                    RowLayout {
+                    ColumnLayout {
                         Layout.fillWidth: true
-                        Label { text: I18n.t("custom-dns-doh-url") }
+                        visible: page.dnsType === "doh"
+                        spacing: 2
+                        Label { text: I18n.t("custom-dns-doh-url"); font.pointSize: Qt.application.font.pointSize * 0.9 }
                         TextField {
                             id: dohField
                             Layout.fillWidth: true
                             placeholderText: "e.g. https://dns.example.com/dns-query"
                         }
                     }
-                    RowLayout {
+                    ColumnLayout {
                         Layout.fillWidth: true
-                        Label { text: I18n.t("custom-dns-doq-endpoint") }
+                        visible: page.dnsType === "doq"
+                        spacing: 2
+                        Label { text: I18n.t("custom-dns-doq-endpoint"); font.pointSize: Qt.application.font.pointSize * 0.9 }
                         TextField {
                             id: doqField
                             Layout.fillWidth: true

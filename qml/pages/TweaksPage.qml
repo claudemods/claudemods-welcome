@@ -30,12 +30,11 @@ Item {
 
         BackBar {}
 
-        ScrollView {
+        Item {
             id: scroll
+            property real availableWidth: width
             Layout.fillWidth: true
             Layout.fillHeight: true
-            contentWidth: availableWidth
-            clip: true
 
             ColumnLayout {
                 width: scroll.availableWidth
@@ -52,7 +51,7 @@ Item {
                     }
                     Flow {
                         Layout.alignment: Qt.AlignHCenter
-                        Layout.preferredWidth: Math.min(scroll.availableWidth - 20, 640)
+                        Layout.preferredWidth: Math.min(scroll.availableWidth - 20, 780)
                         spacing: 16
 
                         Repeater {
@@ -93,7 +92,7 @@ Item {
                     }
                     Flow {
                         Layout.alignment: Qt.AlignHCenter
-                        Layout.preferredWidth: Math.min(scroll.availableWidth - 20, 640)
+                        Layout.preferredWidth: Math.min(scroll.availableWidth - 20, 780)
                         spacing: 10
 
                         HelloButton {

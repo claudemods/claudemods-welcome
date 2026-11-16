@@ -6,10 +6,11 @@ import QtQuick.Layouts
 ApplicationWindow {
     id: win
 
-    width: 800
-    height: 500
-    minimumWidth: 640
-    minimumHeight: 420
+    // Large enough that every page fits without scrolling
+    width: 860
+    height: 580
+    minimumWidth: 800
+    minimumHeight: 540
     visible: true
     title: "ClaudeMods Hello"
 
