@@ -1,0 +1,23 @@
+# Maintainer: ClaudeMods
+pkgname=claudemods-hello
+pkgver=0.28.1
+pkgrel=1
+pkgdesc='ClaudeMods welcome screen (Qt 6 / QML)'
+arch=('x86_64' 'aarch64')
+url='https://github.com/claudemods'
+license=('GPL3')
+depends=('qt6-base' 'qt6-declarative' 'networkmanager' 'polkit' 'pacman')
+makedepends=('cmake' 'ninja')
+optdepends=('blocky: DNS over HTTPS / QUIC support'
+            'chwd: hardware profile checks in the installer')
+source=("$pkgname-$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+    cmake -B build -S "$pkgname-$pkgver" -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+    cmake --build build
+}
+
+package() {
+    DESTDIR="$pkgdir" cmake --install build
+}
