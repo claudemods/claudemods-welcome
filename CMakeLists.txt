@@ -33,6 +33,9 @@ qt_add_executable(claudemods-hello
     src/externals.h
 )
 
+# The generated QML type registration file #includes "backend.h"; it must be findable.
+target_include_directories(claudemods-hello PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src")
+
 set_source_files_properties(qml/I18n.qml PROPERTIES QT_QML_SINGLETON_TYPE TRUE)
 
 qt_add_qml_module(claudemods-hello
