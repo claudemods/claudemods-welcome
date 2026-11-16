@@ -87,23 +87,8 @@ ApplicationWindow {
         }
     }
 
-    header: ToolBar {
-        background: Rectangle { color: "#cc06130f" }
-        RowLayout {
-            anchors.fill: parent
-            anchors.leftMargin: 12
-            anchors.rightMargin: 6
-
-            Item { Layout.fillWidth: true }
-            ToolButton {
-                text: "ⓘ"
-                font.pointSize: Qt.application.font.pointSize * 1.3
-                ToolTip.visible: hovered
-                ToolTip.delay: 500
-                ToolTip.text: I18n.t("button-about-tooltip")
-                onClicked: aboutDialog.open()
-            }
-        }
+    function openAbout() {
+        aboutDialog.open()
     }
 
     Item {

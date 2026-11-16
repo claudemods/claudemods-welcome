@@ -197,6 +197,15 @@ Item {
                     checked = Qt.binding(() => Backend.autostart)
                 }
             }
+            ToolButton {
+                text: "ⓘ"
+                font.pointSize: Qt.application.font.pointSize * 1.3
+                Accessible.name: "About"
+                ToolTip.visible: hovered
+                ToolTip.delay: 500
+                ToolTip.text: I18n.t("button-about-tooltip")
+                onClicked: ApplicationWindow.window.openAbout()
+            }
         }
     }
 }
