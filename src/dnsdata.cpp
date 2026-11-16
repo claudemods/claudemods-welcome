@@ -5,6 +5,7 @@
 #include <QElapsedTimer>
 #include <QFile>
 #include <QHostAddress>
+#include <QNetworkDatagram>
 #include <QSslSocket>
 #include <QUdpSocket>
 #include <QtConcurrent>
