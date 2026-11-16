@@ -8,6 +8,57 @@ Everything the original did is here: the welcome page, info pages, Apps/Tweaks (
 utilities), Troubleshooting, DNS settings (plain / DoT / DoH / DoQ via blocky), the live-ISO installer launcher,
 language switching, autostart and the `fix | tweak | dns | launch` command line interface.
 
+## Features
+
+**Welcome screen**
+- Welcome text, links to documentation, support and project resources (wiki, forum, software, development, donate),
+  Discord / Reddit buttons.
+- Info pages: *Read me*, *Get involved* and a live *Release info* page built from the latest blog post.
+- 36 interface languages, switchable at runtime; the choice is remembered. Info pages are translated for 24 of them.
+- "Launch at start" autostart switch, About dialog, single-instance window.
+
+**Live ISO**
+- "Launch installer" with pre-flight checks: internet connectivity (HTTP, then ping fallback), edition / hardware
+  compatibility (desktop vs handheld) and outdated / testing ISO warnings, then starts the Calamares installer.
+
+**Apps / Tweaks** (installed systems)
+- Systemd tweaks, each toggled with a checkbox (installs the package if needed, enables/starts or stops/disables the
+  unit, optionally uninstalls on disable): Profile-sync-daemon, Systemd-oomd, Bpftune, Bluetooth, Ananicy Cpp and
+  ClaudeMods Update (tray notifier).
+- Utilities: system update, remove orphans, rank mirrors, install gaming packages, install Winboat (also enables
+  `docker.socket` and adds you to the `docker` group), install VRAM management (shown on Intel / AMD GPUs).
+- **Chris Titus Linux Tool** — opens Konsole and runs [Chris Titus Tech's Linux toolbox](https://christitus.com/linux)
+  (`curl -fsSL https://christitus.com/linux | sh`). It is a TUI, so Konsole closes when you quit it. Because it downloads
+  and runs a third-party script, the app asks for confirmation first. CLI: `claudemods-hello fix christitus`.
+- Application launchers for the ClaudeMods Package Installer and Kernel Manager when they are installed.
+
+**Troubleshooting**
+- Clear package cache, remove the pacman db lock, reset pacman keyrings, reinstall all packages and, on KDE Wayland,
+  show the KWin debug console.
+
+**DNS settings** (needs NetworkManager)
+- Pick a connection and one of 16 preset providers (Cloudflare, Google, Quad9, AdGuard, OpenDNS, Yandex, AliDNS, …),
+  a custom server, or automatic DHCP.
+- Transports: plain, DNS over TLS, DNS over HTTPS and DNS over QUIC (DoH / DoQ run through a local `blocky` proxy that
+  is installed and configured for you).
+- Latency test for the selected server and transport, "select best server" (fastest non-filtering provider),
+  provider region / homepage info, and validation of custom addresses, hostnames, DoH URLs and DoQ endpoints.
+
+**Command line** (`claudemods-hello --help`)
+- `fix` — update-system, reinstall-packages, reset-keyrings, remove-lock, clear-cache, remove-orphans, rank-mirrors,
+  install-gaming, show-kwin-debug, install-winboat, install-vram-management, christitus
+- `tweak` — enable / disable / list
+- `dns` — set, set-custom, reset, list-connections, list-servers, test-latency
+- `launch` — package-installer, kernel-manager
+
+## Credits
+
+- Original application: **CachyOS Welcome** by Vladislav Nepogodin and the CachyOS team (GPL-3.0). This is a Qt 6 / QML
+  port with ClaudeMods branding.
+- **Chris Titus Linux Tool** is created and maintained by [Chris Titus Tech](https://christitus.com/linux); it is a
+  third-party project that this app only launches. It is not part of, or reviewed by, ClaudeMods.
+- DNS over HTTPS / QUIC support uses [blocky](https://github.com/0xERR0R/blocky).
+
 ## Build
 
 Requirements: Qt ≥ 6.5 (Core, Gui, Qml, Quick, QuickControls2, DBus, Network, Concurrent), CMake ≥ 3.21,
