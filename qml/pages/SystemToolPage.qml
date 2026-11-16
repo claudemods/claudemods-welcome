@@ -81,7 +81,7 @@ Item {
                 Label {
                     Layout.fillWidth: true
                     Layout.margins: 6
-                    text: "claudemods"
+                    text: "claudemods systemtool v2.0"
                     opacity: 0.45
                     font.pointSize: Qt.application.font.pointSize * 0.75
                 }

@@ -96,6 +96,7 @@ ApplicationWindow {
 
             ColumnLayout {
                 spacing: 0
+                visible: win.page !== "systemtool" // the System Tool page has its own branding
                 Label {
                     text: "claudemods hello"
                     font.bold: true
