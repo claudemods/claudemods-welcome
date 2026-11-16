@@ -63,7 +63,7 @@ QString label(Name t)
     case Name::Bpftune: return QStringLiteral("Bpftune");
     case Name::Bluetooth: return QStringLiteral("Bluetooth");
     case Name::Ananicy: return QStringLiteral("Ananicy Cpp");
-    case Name::ClaudeUpdate: return QStringLiteral("ClaudeMods Update");
+    case Name::ClaudeUpdate: return QStringLiteral("Cachy Update");
     }
     return {};
 }

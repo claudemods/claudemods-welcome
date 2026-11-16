@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = Willkommensdialog für ClaudeMods
+about-dialog-title = claudemods Hello
+about-dialog-comments = Willkommensdialog für claudemods
 
 # Tweaks page
 tweaks = Optimierungen
@@ -98,14 +98,14 @@ section-project = PROJEKT
 offline-error = Die Online-Installation kann nicht gestartet werden! Keine Internetverbindung
 unsupported-hw-warning = Du versuchst, die Installation auf Hardware durchzuführen, die von der aktuellen ISO nicht unterstützt wird, daher kannst du für deine Installation keinen Support in Anspruch nehmen
 desktop-on-handheld-error = Du versuchst, die Desktop-Edition auf einem Handheld-Gerät zu installieren. Bitte verwende die Handheld-Edition für ordnungsgemäße Unterstützung auf dieser Hardware
-outdated-version-warning = Du nutzt eine alte Version von ClaudeMods, bitte nutze die aktuellste Version für Installationen
+outdated-version-warning = Du nutzt eine alte Version von CachyOS, bitte nutze die aktuellste Version für Installationen
 testing-iso-warning = Du verwendest eine alte Testing ISO, Testing-ISOs sind nicht stabil und nicht zum Verwenden geeignet
 tweaksbrowser-label = Apps/Optimierungen
 appbrowser-label = Apps installieren
 troubleshooting-label = Problembehandlung
 launch-start-label = Beim Systemstart ausführen
-welcome-title = Willkommen bei ClaudeMods!
+welcome-title = Willkommen bei claudemods!
 welcome-body =
     Danke, dass du dich unserer Community anschließt!
 
-    Wir, die ClaudeMods-Entwickler, hoffen, dass du es genauso sehr genießen wirst, ClaudeMods zu benutzen, wie wir es genießen, es zu entwickeln. Die Links unten werden dir helfen dich in deinem neuen Betriebssystem zurechtzufinden. Genieße diese Erfahrung und zögere nicht dein Feedback an uns zu senden.
+    Wir, die claudemods-Entwickler, hoffen, dass du es genauso sehr genießen wirst, claudemods zu benutzen, wie wir es genießen, es zu entwickeln. Die Links unten werden dir helfen dich in deinem neuen Betriebssystem zurechtzufinden. Genieße diese Erfahrung und zögere nicht dein Feedback an uns zu senden.

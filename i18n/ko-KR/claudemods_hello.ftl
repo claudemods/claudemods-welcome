@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = ClaudeMods의 시작 화면
+about-dialog-title = claudemods Hello
+about-dialog-comments = claudemods의 시작 화면
 
 # Tweaks page
 tweaks = 트윅
@@ -81,13 +81,13 @@ calamares-install-type = Calamares 설치 유형
 offline-error = 온라인 설치를 시작할 수 없습니다! 인터넷에 연결되어 있지 않습니다
 unsupported-hw-warning = 현재 ISO가 지원하지 않는 하드웨어에 설치를 시도 중입니다. 이 설치는 지원 대상이 아닙니다
 desktop-on-handheld-error = 휴대용 기기에 데스크톱 에디션을 설치하려고 합니다. 이 하드웨어에 대한 적절한 지원을 위해 핸드헬드 에디션을 사용해 주세요
-outdated-version-warning = 오래된 버전의 ClaudeMods ISO를 사용 중입니다. 설치 시 최신 버전을 사용하는 것을 고려해 주세요
+outdated-version-warning = 오래된 버전의 CachyOS ISO를 사용 중입니다. 설치 시 최신 버전을 사용하는 것을 고려해 주세요
 testing-iso-warning = 테스트용 ISO를 사용 중입니다. 테스트용 ISO는 안정적이지 않으며 사용 준비가 완료되지 않은 것으로 간주됩니다
 tweaksbrowser-label = 앱/트윅
 appbrowser-label = 앱 설치
 launch-start-label = 시작 시 실행
-welcome-title = ClaudeMods에 오신 것을 환영합니다!
+welcome-title = claudemods에 오신 것을 환영합니다!
 welcome-body =
     저희 커뮤니티에 참여해 주셔서 감사합니다!
 
-    저희 ClaudeMods 개발팀은 여러분이 ClaudeMods를 사용하는 것을 저희가 개발하는 것만큼 즐기시기를 바랍니다. 아래 링크들은 여러분의 새로운 운영 체제를 시작하는 데 도움이 될 것입니다. 그러니 ClaudeMods를 즐겁게 경험하시고, 언제든지 저희에게 피드백을 보내주세요.
+    저희 claudemods 개발팀은 여러분이 claudemods를 사용하는 것을 저희가 개발하는 것만큼 즐기시기를 바랍니다. 아래 링크들은 여러분의 새로운 운영 체제를 시작하는 데 도움이 될 것입니다. 그러니 claudemods를 즐겁게 경험하시고, 언제든지 저희에게 피드백을 보내주세요.

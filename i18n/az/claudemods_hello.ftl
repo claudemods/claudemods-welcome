@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = ClaudeMods salamlama ekranı
+about-dialog-title = claudemods Hello
+about-dialog-comments = claudemods salamlama ekranı
 
 # Tweaks page
 tweaks = Ayarlar
@@ -97,12 +97,12 @@ calamares-install-type = Calamares quraşdırma növü
 offline-error = Şəbəkə üzərindən quraşdımanı başlatmaq mümkün olmadı! İnternet bağlantısı yoxdur
 unsupported-hw-warning = Hazırkı ISO faylının dəstəkləmədiyi bir cihaza quraşdırmağa cəhd edirsiniz, quraşdırmanız heç bir dəstəyə sahib olmayacaq
 desktop-on-handheld-error = Siz masaüstü variantını daşınabilən cihaza quraşdırmağa cəhd edirsiniz. Belə cihaz üçün nəzrdə tutulan Handheld variantını istifadə etməniz xahiş olunur
-outdated-version-warning = Siz daha köhnə ClaudeMods ISO versiyasını istifadə edirsiniz, xahiş olunur quraşdırma üçün ən son versiyanı nəzərdən keçirin
+outdated-version-warning = Siz daha köhnə CachyOS ISO versiyasını istifadə edirsiniz, xahiş olunur quraşdırma üçün ən son versiyanı nəzərdən keçirin
 testing-iso-warning = Siz sınaq üçün nəzərdə tutulan ISO istifadə edirsiniz, belə ki, sınaq üçün ISO-lar sabit və tam istifadə hazır deyil
 tweaksbrowser-label = Tətbiqlər/Ayarlar
 appbrowser-label = Tətbiqlər quraşdırmaq
 launch-start-label = Sistemə girişdə açmaq
-welcome-title = ClaudeMods-yə xoş gəldiniz!
+welcome-title = claudemods-yə xoş gəldiniz!
 welcome-body =
     Cəmiyyətimizə qoşulduğunuz üçün təşəkkür edirik!
 

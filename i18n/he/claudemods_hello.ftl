@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = תוכנית קבלת הפנים של ClaudeMods
-about-dialog-comments = תוכנית קבלת פנים עבור ClaudeMods
+about-dialog-title = תוכנית קבלת הפנים של claudemods
+about-dialog-comments = תוכנית קבלת פנים עבור claudemods
 
 # Tweaks page
 tweaks = התאמות
@@ -83,13 +83,13 @@ calamares-install-type = סוג ההתקנה של Calamares
 offline-error = אין אפשרות להתחיל בהורדה מקוונת! אין חיבור לאינטרנט
 unsupported-hw-warning = מתבצע ניסיון להתקנה על חומרה שאינה נתמכת על ידי ה־ISO הנוכחי, התקנה זו לא תהיה זכאית לקבלת תמיכה
 desktop-on-handheld-error = מתבצע ניסיון להתקין את מהדורת שולחן העבודה על מכשיר נייד. נא להשתמש במהדורת Handheld לקבלת תמיכה נאותה בחומרה זו
-outdated-version-warning = מחשבך מריץ גרסה ישנה של ה־ISO של ClaudeMods, נא לשקול להשתמש בגרסה העדכנית לצורך התקנת המערכת
+outdated-version-warning = מחשבך מריץ גרסה ישנה של ה־ISO של CachyOS, נא לשקול להשתמש בגרסה העדכנית לצורך התקנת המערכת
 testing-iso-warning = מחשבך מריץ ISO לבדיקה, דמויות ISO לבדיקה לא נחשבות יציבות ומוכנות לשימוש
 tweaksbrowser-label = יישומים/התאמות
 appbrowser-label = התקנת יישומים
 launch-start-label = הפעלה בעת עליית המערכת
-welcome-title = ברוך בואך אל ClaudeMods!
+welcome-title = ברוך בואך אל claudemods!
 welcome-body =
     תודה שהצטרפת לקהילה שלנו!
 
-    אנחנו, מפתחי ClaudeMods, מקווים שיהיה לך כיף להשתמש ב־ClaudeMods כמו שאנחנו נהנים מעבודת הפיתוח שלה. הקישורים הבאים יעזרו לך להתחיל להשתמש במערכת ההפעלה החדשה שלך. מקווים שתהיה לך חוויה מהנה, ולא להסס לשלוח לנו משוב.
+    אנחנו, מפתחי claudemods, מקווים שיהיה לך כיף להשתמש ב־claudemods כמו שאנחנו נהנים מעבודת הפיתוח שלה. הקישורים הבאים יעזרו לך להתחיל להשתמש במערכת ההפעלה החדשה שלך. מקווים שתהיה לך חוויה מהנה, ולא להסס לשלוח לנו משוב.

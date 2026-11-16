@@ -1,37 +1,37 @@
 <big>Gestión de hardware</big>
 
-ClaudeMods no solo permite el uso de múltiples kernels (seleccionables desde las opciones avanzadas en la pantalla de arranque), sino que también proporciona acceso a las versiones más recientes y de vanguardia. Esto se puede realizar mediante el módulo de Kernel en el Administrador de Configuración gráfico de ClaudeMods, o a través de la línea de comandos usando el comando chwd-kernel (ClaudeMods Hardware Detection).
+claudemods no solo permite el uso de múltiples kernels (seleccionables desde las opciones avanzadas en la pantalla de arranque), sino que también proporciona acceso a las versiones más recientes y de vanguardia. Esto se puede realizar mediante el módulo de Kernel en el Administrador de Configuración gráfico de claudemods, o a través de la línea de comandos usando el comando chwd-kernel (claudemods Hardware Detection).
 
-Estas herramientas de ClaudeMods actualizarán automáticamente un kernel recién instalado junto con todos los módulos en uso del kernel anterior. Por ejemplo, al actualizar del kernel 3.18 al 4.1, chwd-kernel incluirá automáticamente las compilaciones del kernel 4.1 y todos los módulos utilizados previamente. ¡Así de sencillo!
+Estas herramientas de claudemods actualizarán automáticamente un kernel recién instalado junto con todos los módulos en uso del kernel anterior. Por ejemplo, al actualizar del kernel 3.18 al 4.1, chwd-kernel incluirá automáticamente las compilaciones del kernel 4.1 y todos los módulos utilizados previamente. ¡Así de sencillo!
 
 El hardware se puede configurar mediante el módulo de Detección de Hardware en el Administrador de Configuración o, alternativamente, con la aplicación de línea de comandos chwd. Con estas herramientas, es posible instalar, por ejemplo, controladores gráficos, tanto libres como propietarios.
 
 <big>Obtener ayuda</big>
 
-Aunque ClaudeMods ha sido diseñado para funcionar de la mejor manera posible desde el primer momento, no pretendemos que sea perfecto. En ocasiones, pueden surgir inconvenientes, dudas o simplemente el deseo de personalizar el sistema a su medida. ¡Esta página detalla los recursos disponibles para brindar asistencia!
+Aunque claudemods ha sido diseñado para funcionar de la mejor manera posible desde el primer momento, no pretendemos que sea perfecto. En ocasiones, pueden surgir inconvenientes, dudas o simplemente el deseo de personalizar el sistema a su medida. ¡Esta página detalla los recursos disponibles para brindar asistencia!
 
 <b>Buscar en la web</b>
 
-Probablemente, el primer paso para obtener ayuda general sobre Linux sea utilizar un motor de búsqueda. Solo es necesario incluir términos como 'Linux', 'ClaudeMods' o 'Arch' en la consulta.
+Probablemente, el primer paso para obtener ayuda general sobre Linux sea utilizar un motor de búsqueda. Solo es necesario incluir términos como 'Linux', 'claudemods' o 'Arch' en la consulta.
 
-Dado que ClaudeMods se basa en Arch Linux, las guías y consejos diseñados para Arch suelen ser plenamente aplicables también en ClaudeMods.
+Dado que claudemods se basa en Arch Linux, las guías y consejos diseñados para Arch suelen ser plenamente aplicables también en claudemods.
 
 <b>Consultar los foros</b>
 
-Para obtener ayuda específica sobre ClaudeMods, existe un foro en línea dedicado donde se pueden buscar temas o crear uno nuevo. Este es probablemente el mejor recurso para la colaboración, discusión y asistencia técnica. Se puede solicitar ayuda, publicar opiniones o proponer sugerencias con total libertad.
+Para obtener ayuda específica sobre claudemods, existe un foro en línea dedicado donde se pueden buscar temas o crear uno nuevo. Este es probablemente el mejor recurso para la colaboración, discusión y asistencia técnica. Se puede solicitar ayuda, publicar opiniones o proponer sugerencias con total libertad.
 
-El foro de ClaudeMods está dividido en subforos según temas y entornos; se recomienda publicar cada consulta en el lugar correspondiente.
+El foro de claudemods está dividido en subforos según temas y entornos; se recomienda publicar cada consulta en el lugar correspondiente.
 
 <big>Otros recursos</big>
 
     - <a href="https://aur.archlinux.org">Repositorio AUR</a> - Software adicional fuera de los repositorios regulares, compilado desde el código fuente.
-    - <a href="https://wiki.cachyos.org">Wiki de ClaudeMods</a> - Wiki oficial de ClaudeMods.
+    - <a href="https://wiki.cachyos.org">Wiki de claudemods</a> - Wiki oficial de claudemods.
     - <a href="https://wiki.archlinux.org">Wiki de Arch</a> - Wiki oficial de Arch Linux.
 
 <big>Sugerencias</big>
 
-¿Tiene alguna sugerencia para mejorar ClaudeMods? ¿Encontró algo que le gustaría incluir o desea colaborar? Por favor, háganoslo saber publicando su propuesta en el foro o visitándonos en el canal de IRC.
+¿Tiene alguna sugerencia para mejorar claudemods? ¿Encontró algo que le gustaría incluir o desea colaborar? Por favor, háganoslo saber publicando su propuesta en el foro o visitándonos en el canal de IRC.
 
 ¡Gracias!
 
-¡Esperamos que disfrute su experiencia con ClaudeMods!
+¡Esperamos que disfrute su experiencia con claudemods!

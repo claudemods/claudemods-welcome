@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = Schermata di benvenuto per ClaudeMods
+about-dialog-title = claudemods Hello
+about-dialog-comments = Schermata di benvenuto per claudemods
 
 # Tweaks page
 tweaks = Personalizzazioni
@@ -102,14 +102,14 @@ calamares-install-type = Tipo di installazione Calamares
 offline-error = Impossibile avviare l'installazione online! Connessione a internet assente
 unsupported-hw-warning = Si sta tentando di effettuare l'installazione su un hardware non supportato dall'ISO corrente; l'installazione non potrà beneficiare dell'assistenza
 desktop-on-handheld-error = Si sta tentando di installare l'edizione Desktop su un dispositivo portatile. Si prega di utilizzare l'edizione Handheld per un supporto adeguato su questo hardware
-outdated-version-warning = Stai usando una versione obsoleta dell'ISO di ClaudeMods, considera di utilizzare l'ultima versione per le installazioni
+outdated-version-warning = Stai usando una versione obsoleta dell'ISO di CachyOS, considera di utilizzare l'ultima versione per le installazioni
 testing-iso-warning = Stai usando una ISO di test, le ISO di test non sono considerate stabili e pronte per l'uso
 tweaksbrowser-label = Applicazioni/Personalizzazioni
 appbrowser-label = Installa Applicazioni
 troubleshooting-label = Risoluzione dei problemi
 launch-start-label = Lancia all'avvio
-welcome-title = Benvenuto in ClaudeMods!
+welcome-title = Benvenuto in claudemods!
 welcome-body =
     Grazie per esserti unito alla nostra comunità!
 
-    Noi, gli sviluppatori di ClaudeMods, speriamo che trovi l'utilizzo di ClaudeMods altrettanto piacevole quanto lo troviamo noi nello svilupparlo. I collegamenti sottostanti ti aiuteranno a orientarti nel tuo nuovo sistema operativo. Per cui goditi l'esperienza e non esitare a inviarci la tua opinione.
+    Noi, gli sviluppatori di claudemods, speriamo che trovi l'utilizzo di claudemods altrettanto piacevole quanto lo troviamo noi nello svilupparlo. I collegamenti sottostanti ti aiuteranno a orientarti nel tuo nuovo sistema operativo. Per cui goditi l'esperienza e non esitare a inviarci la tua opinione.

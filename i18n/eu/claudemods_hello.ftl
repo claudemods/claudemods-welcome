@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = ClaudeMods-en ongietorri pantaila
+about-dialog-title = claudemods Hello
+about-dialog-comments = claudemods-en ongietorri pantaila
 
 # Tweaks page
 tweaks = Doikuntzak
@@ -74,13 +74,13 @@ calamares-install-type = Calamares instalazio mota
 offline-error = Ezin da lineako instalazioa hasi! Ez dago interneteko konexiorik
 unsupported-hw-warning = Uneko ISOak onartzen ez duen hardware batean instalatzen saiatzen ari zara, zure instalazioak ez du laguntza ofizialik jasoko
 desktop-on-handheld-error = Mahaigaineko bertsioa gailu eramangarri (handheld) batean instalatzen saiatzen ari zara. Mesedez, erabili Handheld bertsioa hardware honetan euskarri egokia izateko
-outdated-version-warning = ClaudeMods ISO bertsio zaharrago bat erabiltzen ari zara, mesedez, kontuan hartu azken bertsioa erabiltzea instalazioetarako
+outdated-version-warning = CachyOS ISO bertsio zaharrago bat erabiltzen ari zara, mesedez, kontuan hartu azken bertsioa erabiltzea instalazioetarako
 testing-iso-warning = Probetarako ISO bat erabiltzen ari zara; probetarako ISOak ez dira egonkorrak edo erabiltzeko prest daudenik kontsideratzen
 tweaksbrowser-label = Aplikazioak/Doikuntzak
 appbrowser-label = Instalatu aplikazioak
 launch-start-label = Abiarazi hasieran
-welcome-title = Ongi etorri ClaudeMods-era!
+welcome-title = Ongi etorri claudemods-era!
 welcome-body =
     Eskerrik asko gure komunitatean sartzeagatik!
 
-    Guk, ClaudeMods-eko garatzaileok, ClaudeMods erabiltzen guk sortzen gozatu dugun adina gozatzea espero dugu. Azpiko estekek zure sistema eragile berriarekin lehen urratsak ematen lagunduko dizute. Beraz, gozatu esperientziaz, eta ez izan zalantzarik zure iritziak guri bidaltzeko.
+    Guk, claudemods-eko garatzaileok, claudemods erabiltzen guk sortzen gozatu dugun adina gozatzea espero dugu. Azpiko estekek zure sistema eragile berriarekin lehen urratsak ematen lagunduko dizute. Beraz, gozatu esperientziaz, eta ez izan zalantzarik zure iritziak guri bidaltzeko.

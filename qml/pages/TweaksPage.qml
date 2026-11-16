@@ -3,7 +3,7 @@ import ClaudeMods.Hello
 import QtQuick.Controls
 import QtQuick.Layouts
 
-// Apps / Tweaks: systemd tweaks, system utilities and the ClaudeMods applications.
+// Apps / Tweaks: systemd tweaks, system utilities and the CachyOS applications.
 Item {
     id: page
 
@@ -150,12 +150,12 @@ Item {
 
                         HelloButton {
                             visible: Backend.hasPackageInstaller
-                            label: "ClaudeMods PackageInstaller"
+                            label: "CachyOS PackageInstaller"
                             onClicked: Backend.launchApp("package-installer")
                         }
                         HelloButton {
                             visible: Backend.hasKernelManager
-                            label: "ClaudeMods Kernel Manager"
+                            label: "CachyOS Kernel Manager"
                             onClicked: Backend.launchApp("kernel-manager")
                         }
                     }

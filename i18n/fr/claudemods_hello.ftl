@@ -1,6 +1,6 @@
 # Boite de dialogue : À propos
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = Écran de bienvenue pour ClaudeMods
+about-dialog-title = claudemods Hello
+about-dialog-comments = Écran de bienvenue pour claudemods
 
 # Page des modifications
 tweaks = Modifications
@@ -103,13 +103,13 @@ calamares-install-type = Type d'installion Calamares
 offline-error = Impossible de démarrer l'installation en ligne ! Pas de connexion internet
 unsupported-hw-warning = Vous tentez d'installer sur du matériel non supporté par l\'ISO actuelle, votre installation ne sera pas éligible à de l\'assistance
 desktop-on-handheld-error = Vous tentez d\'installer l\'édition Desktop sur un appareil portable. Veuillez utiliser l\'édition Handheld pour une prise en charge correcte de ce matériel
-outdated-version-warning = Vous utilisez une ancienne version de l'ISO de ClaudeMods, veuillez utiliser la dernière version pour vos installations
+outdated-version-warning = Vous utilisez une ancienne version de l'ISO de CachyOS, veuillez utiliser la dernière version pour vos installations
 testing-iso-warning = Vous utilisez une ISO de test, les ISOs de test ne sont pas considérées comme stables ni prêtes à l'emploi.
 tweaksbrowser-label = Applications/Modifications
 appbrowser-label = Installer des Applications
 launch-start-label = Lancer au démarrage
-welcome-title = Bienvenue sur ClaudeMods !
+welcome-title = Bienvenue sur claudemods !
 welcome-body =
     Merci de rejoindre notre communauté !
 
-    Nous, les développeurs de ClaudeMods, espérons que vous aimerez autant ClaudeMods que nous avons aimé à le développer. Les liens ci-dessous vous aiderons à prendre en main votre nouveau système d\'exploitation. Profitez donc de l\'expérience, et n'hésitez pas à nous envoyer vos retours.
+    Nous, les développeurs de claudemods, espérons que vous aimerez autant claudemods que nous avons aimé à le développer. Les liens ci-dessous vous aiderons à prendre en main votre nouveau système d\'exploitation. Profitez donc de l\'expérience, et n'hésitez pas à nous envoyer vos retours.

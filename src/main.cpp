@@ -9,6 +9,7 @@
 #include <QLocalServer>
 #include <QLocalSocket>
 #include <QQmlApplicationEngine>
+#include <QQuickStyle>
 #include <QStandardPaths>
 #include <QUrl>
 
@@ -23,6 +24,11 @@ int main(int argc, char *argv[])
         QCoreApplication::setApplicationVersion(QStringLiteral(APP_VERSION));
         Backend::setupLocalization();
         return cli::run(app.arguments());
+    }
+
+    // Fusion honours the app's dark palette on every desktop (override with QT_QUICK_CONTROLS_STYLE)
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(QStringLiteral("Fusion"));
     }
 
     QGuiApplication app(argc, argv);

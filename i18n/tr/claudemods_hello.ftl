@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = ClaudeMods Hoş Geldin Ekranı
+about-dialog-title = claudemods Hello
+about-dialog-comments = claudemods Hoş Geldin Ekranı
 
 # Tweaks page
 tweaks = İnce ayarlar
@@ -14,9 +14,9 @@ gaming-package-installed = Oyun paketleri halihazırda kurulu!
 winboat-package-installed = Winboat paketleri zaten kurulu!
 vram-management-package-installed = VRAM yönetim paketleri zaten kurulu!
 
-# Tweaks page — quick launch (ClaudeMods apps)
-app-claudemods-pi-label = ClaudeMods Paket Kurucu
-app-claudemods-kernel-manager-label = ClaudeMods Çekirdek Yöneticisi
+# Tweaks page — quick launch (CachyOS apps)
+app-claudemods-pi-label = CachyOS Paket Kurucu
+app-claudemods-kernel-manager-label = CachyOS Çekirdek Yöneticisi
 
 
 # Dns Connections page
@@ -101,13 +101,13 @@ calamares-install-type = Calamares kurulum tipi
 offline-error = Çevrimiçi kurulum başlatılamadı! Bir internet bağlantısı bulunmuyor.
 unsupported-hw-warning = Mevcut ISO tarafından desteklenmeyen bir donanıma kurulum yapmaya çalışıyorsunuz, kurulumunuz destek için uygun olmayacaktır
 desktop-on-handheld-error = Masaüstü sürümünü bir el cihazına kurmaya çalışıyorsunuz. Lütfen bu donanımda uygun destek için Handheld sürümünü kullanın
-outdated-version-warning = Daha eski bir ClaudeMods ISO sürümü kullanıyorsunuz, lütfen kurulumlar için en son sürümü kullanmayı düşünün
+outdated-version-warning = Daha eski bir CachyOS ISO sürümü kullanıyorsunuz, lütfen kurulumlar için en son sürümü kullanmayı düşünün
 testing-iso-warning = Test amaçlı bir ISO kullanıyorsunuz, test ISO'ları kararlı ve kullanıma hazır olarak kabul edilmez
 tweaksbrowser-label = Uygulamalar/İyileştirmeler
 appbrowser-label = Uygulama kur
 launch-start-label = Başlangıçta aç
-welcome-title = ClaudeMods'e Hoş Geldiniz!
+welcome-title = claudemods'e Hoş Geldiniz!
 welcome-body =
     Aramıza katıldığınız için size çok teşekkür ederiz!
 
-    ClaudeMods Geliştirici Ekibi olarak, bizler yapımında ne kadar zevk aldıysak, sizlerin de ClaudeMods'i kullanırken o kadar memnun kalacağınızı umut ediyoruz. Aşağıdaki bağlantılar, yeni işletim sisteminizi kullanma konusunda sizlere yardımcı olacaktır. Bu vesileyle tecrübenizin tadını çıkarın, fikir ve düşüncelerinizi bizlerle paylaşmaktan çekinmeyin.
+    claudemods Geliştirici Ekibi olarak, bizler yapımında ne kadar zevk aldıysak, sizlerin de claudemods'i kullanırken o kadar memnun kalacağınızı umut ediyoruz. Aşağıdaki bağlantılar, yeni işletim sisteminizi kullanma konusunda sizlere yardımcı olacaktır. Bu vesileyle tecrübenizin tadını çıkarın, fikir ve düşüncelerinizi bizlerle paylaşmaktan çekinmeyin.

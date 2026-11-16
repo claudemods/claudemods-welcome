@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = Benvinguda del ClaudeMods
-about-dialog-comments = Pantalla de benvinguda per al ClaudeMods
+about-dialog-title = Benvinguda del claudemods
+about-dialog-comments = Pantalla de benvinguda per al claudemods
 
 # Tweaks page
 tweaks = Retocs
@@ -93,13 +93,13 @@ calamares-install-type = Tipus d'instal·lació per al Calamares
 offline-error = No es pot iniciar la instal·lació en línia! No hi ha connexió a Internet.
 unsupported-hw-warning = Esteu intentant d'instal·lar el sistema en un maquinari que no és compatible amb la imatge ISO actual. La instal·lació no podrà rebre suport.
 desktop-on-handheld-error = Esteu intentant d'instal·lar l'edició d'escriptori en un dispositiu portàtil. Si us plau, useu l'edició Handheld per a un suport adequat en aquest maquinari.
-outdated-version-warning = Useu una imatge més antiga del ClaudeMods. Si us plau, considereu usar-ne la versió més recent per a les instal·lacions.
+outdated-version-warning = Useu una imatge més antiga del CachyOS. Si us plau, considereu usar-ne la versió més recent per a les instal·lacions.
 testing-iso-warning = Useu una imatge ISO de prova. Les ISO de prova no es consideren estables i llestes per a un ús productiu.
 tweaksbrowser-label = Aplicacions / Retocs
 appbrowser-label = Instal·leu apliacions
 launch-start-label = Obre-ho a l'inici
-welcome-title = Us donem la benvinguda al ClaudeMods!
+welcome-title = Us donem la benvinguda al claudemods!
 welcome-body =
     Moltes mercès per unir-vos a la nostra comunitat!
 
-    Nosaltres, els desenvolupadors del ClaudeMods, esperem que gaudiu d'usar el ClaudeMods tant com a nosaltres ens agrada fer-lo. Els enllaços següents us ajudaran a començar. Gaudiu de l'experiència i no dubteu a enviar-nos-en comentaris.
+    Nosaltres, els desenvolupadors del claudemods, esperem que gaudiu d'usar el claudemods tant com a nosaltres ens agrada fer-lo. Els enllaços següents us ajudaran a començar. Gaudiu de l'experiència i no dubteu a enviar-nos-en comentaris.

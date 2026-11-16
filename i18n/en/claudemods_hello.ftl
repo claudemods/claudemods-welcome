@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = Welcome screen for ClaudeMods
+about-dialog-title = claudemods Hello
+about-dialog-comments = Welcome screen for claudemods
 
 # Tweaks page
 tweaks = Tweaks
@@ -108,20 +108,20 @@ calamares-install-type = Calamares install type
 offline-error = Unable to start online installation! No internet connection
 unsupported-hw-warning = You are attempting to install on hardware not supported by the current ISO, your installation will not be eligible for support
 desktop-on-handheld-error = You are attempting to install the Desktop edition on a handheld device. Please use the Handheld edition for proper support on this hardware
-outdated-version-warning = You are using an older version of ClaudeMods ISO, please consider using latest version for installations
+outdated-version-warning = You are using an older version of CachyOS ISO, please consider using latest version for installations
 testing-iso-warning = You are using a testing ISO, testing ISOs are not considered stable and ready for use
 tweaksbrowser-label = Apps/Tweaks
 appbrowser-label = Install Apps
 troubleshooting-label = Troubleshooting
 launch-start-label = Launch at start
-welcome-title = Welcome to ClaudeMods!
+welcome-title = Welcome to claudemods!
 welcome-body =
-    Thank you for joining our community!
+    Thank you for joining the community!
 
-    We, the ClaudeMods Developers, hope that you will enjoy using ClaudeMods as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback.
+    I hope you enjoy using claudemods as much as I enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send me your feedback.
 
 # Chris Titus Tech's Linux tool
 christitus-title = Chris Titus Linux Tool
 christitus-tooltip = Open Chris Titus Tech's Linux toolbox in Konsole
 christitus-confirm-title = Run Chris Titus Linux Tool?
-christitus-confirm = This opens Konsole and runs a script downloaded from {$url} (curl -fsSL {$url} | sh). The script is written by a third party and is not reviewed by ClaudeMods. Continue?
+christitus-confirm = This opens Konsole and runs a script downloaded from {$url} (curl -fsSL {$url} | sh). The script is written by a third party and is not reviewed by claudemods. Continue?

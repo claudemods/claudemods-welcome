@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods 欢迎
-about-dialog-comments = ClaudeMods 的欢迎界面
+about-dialog-title = claudemods 欢迎
+about-dialog-comments = claudemods 的欢迎界面
 
 # Tweaks page
 tweaks = 调整
@@ -97,13 +97,13 @@ calamares-install-type = Calamares 安装类型
 offline-error = 无法开始在线安装！无网络连接
 unsupported-hw-warning = 您正尝试安装在当前 ISO 不支持的硬件上，您的安装将不会被合法地支持
 desktop-on-handheld-error = 您正尝试在手持设备上安装桌面版。请使用手持版以获得与此硬件的良好兼容性。
-outdated-version-warning = 您正使用 ClaudeMods 的一个旧版 ISO，请考虑使用最新版来安装
+outdated-version-warning = 您正使用 CachyOS 的一个旧版 ISO，请考虑使用最新版来安装
 testing-iso-warning = 您正使用测试版的 ISO，测试版 ISO 尚未稳定，不建议日常使用
 tweaksbrowser-label = 应用/调整
 appbrowser-label = 安装应用
 launch-start-label = 在启动时打开
-welcome-title = 欢迎使用 ClaudeMods！
+welcome-title = 欢迎使用 claudemods！
 welcome-body =
     欢迎您加入我们的社区！
 
-    我们是 ClaudeMods 的开发者，希望您能像我们开发一样愉快地使用 ClaudeMods！下方的链接将帮助您开始探索您的新操作系统，请尽管享受您的体验，如果您有任何的反馈或意见，不用犹豫！发送给我们！
+    我们是 claudemods 的开发者，希望您能像我们开发一样愉快地使用 claudemods！下方的链接将帮助您开始探索您的新操作系统，请尽管享受您的体验，如果您有任何的反馈或意见，不用犹豫！发送给我们！

@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = ClaudeMods pasveikinimo langas
+about-dialog-title = claudemods Hello
+about-dialog-comments = claudemods pasveikinimo langas
 
 # Tweaks page
 tweaks = Tinkinimas
@@ -97,13 +97,13 @@ calamares-install-type = Calamares diegimo tipas
 offline-error = Nepavyko paleisti internetinio diegimo! Nėra interneto ryšio
 unsupported-hw-warning = Bandote diegti įrangai, kurios ši ISO versija nepalaiko; tokiam diegimui palaikymas nebus teikiamas
 desktop-on-handheld-error = Bandote diegti Desktop leidimą į delninį įrenginį. Kad ši įranga būtų tinkamai palaikoma, naudokite Handheld leidimą
-outdated-version-warning = Naudojate senesnę ClaudeMods ISO versiją; diegdami apsvarstykite galimybę naudoti naujausią versiją
+outdated-version-warning = Naudojate senesnę CachyOS ISO versiją; diegdami apsvarstykite galimybę naudoti naujausią versiją
 testing-iso-warning = Naudojate bandomąją ISO versiją; bandomosios ISO versijos nelaikomos stabiliomis ir parengtomis naudoti
 tweaksbrowser-label = Programos / tinkinimas
 appbrowser-label = Įdiegti programas
 launch-start-label = Paleisti kartu su sistema
-welcome-title = Sveiki atvykę į ClaudeMods!
+welcome-title = Sveiki atvykę į claudemods!
 welcome-body =
     Ačiū, kad prisijungėte prie mūsų bendruomenės!
 
-    Mes, ClaudeMods kūrėjai, tikimės, kad naudotis ClaudeMods jums bus taip pat malonu, kaip mums ją kurti. Toliau pateiktos nuorodos padės pradėti darbą su naująja operacine sistema. Tad mėgaukitės patirtimi ir nedvejodami atsiųskite mums savo atsiliepimus.
+    Mes, claudemods kūrėjai, tikimės, kad naudotis claudemods jums bus taip pat malonu, kaip mums ją kurti. Toliau pateiktos nuorodos padės pradėti darbą su naująja operacine sistema. Tad mėgaukitės patirtimi ir nedvejodami atsiųskite mums savo atsiliepimus.

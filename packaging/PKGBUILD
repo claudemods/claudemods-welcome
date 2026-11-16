@@ -1,12 +1,12 @@
-# Maintainer: ClaudeMods
+# Maintainer: claudemods
 pkgname=claudemods-hello
 pkgver=0.28.1
 pkgrel=1
-pkgdesc='ClaudeMods welcome screen (Qt 6 / QML)'
+pkgdesc='claudemods welcome screen (Qt 6 / QML)'
 arch=('x86_64' 'aarch64')
 url='https://github.com/claudemods'
 license=('GPL3')
-depends=('qt6-base' 'qt6-declarative' 'networkmanager' 'polkit' 'pacman')
+depends=('qt6-base' 'qt6-declarative' 'qt6-imageformats' 'networkmanager' 'polkit' 'pacman')
 makedepends=('cmake' 'ninja')
 optdepends=('blocky: DNS over HTTPS / QUIC support'
             'chwd: hardware profile checks in the installer')

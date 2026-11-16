@@ -1,5 +1,5 @@
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = ClaudeMods-i tervituskuva
+about-dialog-title = claudemods Hello
+about-dialog-comments = claudemods-i tervituskuva
 
 # Tweaks page
 tweaks = Kohandused
@@ -80,13 +80,13 @@ calamares-install-type = Calamares'i paigalduse tüüp
 offline-error = Võrgupaigaldust ei saa alustada! Internetiühendus puudub
 unsupported-hw-warning = Proovite paigaldada riistvarale, mida praegune ISO ei toeta, teie paigaldus ei kuulu toe alla
 desktop-on-handheld-error = Proovite paigaldada töölaua väljaannet pihuseadmele. Palun kasutage selle riistvara nõuetekohaseks toeks väljaannet Handheld
-outdated-version-warning = Kasutate ClaudeMods ISO vanemat versiooni, palun kaaluge paigaldamiseks uusima versiooni kasutamist
+outdated-version-warning = Kasutate CachyOS ISO vanemat versiooni, palun kaaluge paigaldamiseks uusima versiooni kasutamist
 testing-iso-warning = Kasutate testimiseks mõeldud ISO-d, testimis-ISO-sid ei peeta stabiilseteks ja kasutusvalmiteks
 tweaksbrowser-label = Rakendused/Kohandused
 appbrowser-label = Paigalda rakendusi
 launch-start-label = Käivita käivitamisel
-welcome-title = Tere tulemast ClaudeMods-i!
+welcome-title = Tere tulemast claudemods-i!
 welcome-body =
     Täname, et liitusite meie kogukonnaga!
 
-    Meie, ClaudeMods-i arendajad, loodame, et teile meeldib ClaudeMods-i kasutamine sama palju kui meile selle ehitamine. Allolevad lingid aitavad teil oma uue operatsioonisüsteemiga alustada. Nii et nautige kogemust ja ärge kartke meile oma tagasisidet saata.
+    Meie, claudemods-i arendajad, loodame, et teile meeldib claudemods-i kasutamine sama palju kui meile selle ehitamine. Allolevad lingid aitavad teil oma uue operatsioonisüsteemiga alustada. Nii et nautige kogemust ja ärge kartke meile oma tagasisidet saata.

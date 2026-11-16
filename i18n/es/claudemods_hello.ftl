@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = Pantalla de bienvenida de ClaudeMods
+about-dialog-title = claudemods Hello
+about-dialog-comments = Pantalla de bienvenida de claudemods
 
 # Tweaks page
 tweaks = Ajustes
@@ -96,13 +96,13 @@ calamares-install-type = Tipo de instalación Calamares
 offline-error = ¡No se pudo iniciar la instalación en línea! No hay conexión a internet
 unsupported-hw-warning = Se está intentando instalar en hardware no soportado por la ISO actual; la instalación no contará con soporte oficial.
 desktop-on-handheld-error = Se está intentando instalar la edición de Escritorio en un dispositivo portátil. Por favor, utilice la edición Handheld para obtener un soporte adecuado en este hardware.
-outdated-version-warning = Se está utilizando una versión antigua de la ISO de ClaudeMods; por favor, considere usar la última versión para realizar la instalación.
+outdated-version-warning = Se está utilizando una versión antigua de la ISO de CachyOS; por favor, considere usar la última versión para realizar la instalación.
 testing-iso-warning = Se está utilizando una ISO de prueba; estas versiones no se consideran estables ni listas para su uso general.
 tweaksbrowser-label = Aplicaciones/Ajustes
 appbrowser-label = Instalar Aplicaciones
 launch-start-label = Ejecutar al inicio
-welcome-title = ¡Bienvenido a ClaudeMods!
+welcome-title = ¡Bienvenido a claudemods!
 welcome-body =
     ¡Gracias por unirse a nuestra comunidad!
 
-    Quienes desarrollamos ClaudeMods deseamos que disfrute este sistema operativo tanto como nosotros disfrutamos creándolo. Los enlaces a continuación le ayudarán a dar sus primeros pasos. Disfrute la experiencia y no dude en enviarnos sus comentarios.
+    Quienes desarrollamos claudemods deseamos que disfrute este sistema operativo tanto como nosotros disfrutamos creándolo. Los enlaces a continuación le ayudarán a dar sus primeros pasos. Disfrute la experiencia y no dude en enviarnos sus comentarios.

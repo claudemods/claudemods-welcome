@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = Tela de Boas-Vindas do ClaudeMods
+about-dialog-title = claudemods Hello
+about-dialog-comments = Tela de Boas-Vindas do claudemods
 
 # Tweaks page
 tweaks = Ajustes
@@ -87,10 +87,10 @@ install-gpu-boosters-tooltip = Instala os pacotes dmemcg-booster e plasma-foregr
 button-about-tooltip = Sobre
 button-web-resource-tooltip = Página Web
 button-development-label = Desenvolvimento
-button-software-label = Aplicações do ClaudeMods
+button-software-label = Aplicações do CachyOS
 button-donate-label = Doar
 button-forum-label = Fórum
-button-installer-label = Instalar ClaudeMods
+button-installer-label = Instalar CachyOS
 button-involved-label = Contribua no Projeto
 button-readme-label = Leia-Me
 button-release-info-label = Informações da Versão
@@ -107,16 +107,16 @@ calamares-install-type = Calamares install type
 
 # Main Page (body)
 offline-error = Não foi possível iniciar a instalação! Sem conexão com a internet.
-unsupported-hw-warning = Você está tentando instalar o ClaudeMods em um hardware incompatível com a versão atual. Sua versão não é elegível para suporte.
+unsupported-hw-warning = Você está tentando instalar o CachyOS em um hardware incompatível com a versão atual. Sua versão não é elegível para suporte.
 desktop-on-handheld-error = Você está tentando instalar a edição Desktop em um dispositivo portátil. Por favor, use a edição Handheld para suporte adequado neste hardware
-outdated-version-warning = Você está usando uma versão antiga do ClaudeMods, considere instalar uma versão atualizada.
+outdated-version-warning = Você está usando uma versão antiga do CachyOS, considere instalar uma versão atualizada.
 testing-iso-warning = Você está usando uma ISO de testes que não é estável para uso.
 tweaksbrowser-label = Aplicativos / Ajustes
 appbrowser-label = Instalar Aplicativos
 troubleshooting-label = Solução de Problemas
 launch-start-label = Abrir ao Iniciar
-welcome-title = Bem-Vindo ao ClaudeMods!
+welcome-title = Bem-Vindo ao claudemods!
 welcome-body =
     Obrigado por entrar na nossa comunidade!
 
-    Nós, os desenvolvedores do ClaudeMods, esperamos que você goste de usá-lo o tanto quanto gostamos de desenvolvê-lo! Os links abaixo ajudarão você dar os primeiros passos com seu novo sistema operacional. Aproveite a experiência, e não hesite em dar seu feedback!
+    Nós, os desenvolvedores do claudemods, esperamos que você goste de usá-lo o tanto quanto gostamos de desenvolvê-lo! Os links abaixo ajudarão você dar os primeiros passos com seu novo sistema operacional. Aproveite a experiência, e não hesite em dar seu feedback!

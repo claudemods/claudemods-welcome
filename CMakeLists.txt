@@ -14,7 +14,7 @@ qt_standard_project_setup(REQUIRES 6.5)
 # ---------------------------------------------------------------------------
 file(GLOB_RECURSE HELLO_FTL   RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/i18n/*.ftl")
 file(GLOB_RECURSE HELLO_PAGES RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/data/pages/*")
-file(GLOB         HELLO_IMG   RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/data/img/*.svg")
+file(GLOB         HELLO_IMG   RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/data/img/*.svg" "${CMAKE_SOURCE_DIR}/data/img/*.webp")
 file(GLOB         HELLO_ICONS RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/icons/*.svg")
 set(HELLO_RESOURCE_FILES data/preferences.json ${HELLO_FTL} ${HELLO_PAGES} ${HELLO_IMG} ${HELLO_ICONS})
 

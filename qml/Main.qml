@@ -12,7 +12,37 @@ ApplicationWindow {
     minimumWidth: 800
     minimumHeight: 540
     visible: true
-    title: "ClaudeMods Hello"
+    title: "claudemods hello"
+
+    // Dark theme that stays readable on top of the background image
+    palette {
+        window: "#0b1a16"
+        windowText: "#f2f7f5"
+        base: "#12251f"
+        alternateBase: "#17302a"
+        text: "#f2f7f5"
+        button: "#1d4a40"
+        buttonText: "#f2f7f5"
+        highlight: "#1fb59a"
+        highlightedText: "#06130f"
+        placeholderText: "#9fb8b1"
+        link: "#5ee0c8"
+        toolTipBase: "#12251f"
+        toolTipText: "#f2f7f5"
+    }
+
+    background: Item {
+        Image {
+            anchors.fill: parent
+            source: "qrc:/data/img/background.webp"
+            fillMode: Image.PreserveAspectCrop
+            asynchronous: true
+        }
+        Rectangle { // dim the picture so text stays readable
+            anchors.fill: parent
+            color: "#99000000"
+        }
+    }
 
     /// "home", "readme", "release", "involved", "tweaks", "troubleshooting", "dns"
     property string page: "home"
@@ -49,6 +79,7 @@ ApplicationWindow {
     }
 
     header: ToolBar {
+        background: Rectangle { color: "#cc06130f" }
         RowLayout {
             anchors.fill: parent
             anchors.leftMargin: 12
@@ -57,11 +88,11 @@ ApplicationWindow {
             ColumnLayout {
                 spacing: 0
                 Label {
-                    text: "ClaudeMods Hello"
+                    text: "claudemods hello"
                     font.bold: true
                 }
                 Label {
-                    text: "ClaudeMods rolling"
+                    text: "claudemods rolling"
                     font.pointSize: Qt.application.font.pointSize * 0.85
                     opacity: 0.7
                 }
@@ -172,13 +203,14 @@ ApplicationWindow {
                 Layout.fillWidth: true
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WordWrap
-                text: "© 2021-2026 CachyOS team — Qt/QML port by ClaudeMods\nGNU General Public License v3.0"
+                text: "© 2021-2026 CachyOS team — Qt/QML port by claudemods\nGNU General Public License v3.0"
                 font.pointSize: Qt.application.font.pointSize * 0.85
                 opacity: 0.7
             }
             Label {
                 Layout.alignment: Qt.AlignHCenter
-                text: "<a href=\"https://github.com/cachyos/cachyos-welcome\">GitHub</a>"
+                text: "<a href=\"website\">claudemodsreloaded.co.uk</a> · "
+                      + "<a href=\"https://github.com/claudemods\">GitHub</a>"
                 textFormat: Text.RichText
                 onLinkActivated: link => Backend.openUrl(link)
             }

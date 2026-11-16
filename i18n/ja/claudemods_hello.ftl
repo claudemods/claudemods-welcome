@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = ClaudeMods のようこそ画面
+about-dialog-title = claudemods Hello
+about-dialog-comments = claudemods のようこそ画面
 
 # Tweaks page
 tweaks = チューニング
@@ -102,14 +102,14 @@ calamares-install-type = Calamares でインストール
 offline-error = インターネットに接続されていないため、オンラインでのインストールを開始できません
 unsupported-hw-warning = 現在の ISO に対応していないハードウェアにインストールしようとしているため、サポート対象外になります
 desktop-on-handheld-error = ハンドヘルド型デバイスにデスクトップ版をインストールしようとしています。ハードウェアに適切に対応するため、ハンドヘルド版を利用してください
-outdated-version-warning = 現在古いバージョンの ClaudeMods ISO を利用しています。インストールには最新バージョンを利用することをおすすめします
+outdated-version-warning = 現在古いバージョンの CachyOS ISO を利用しています。インストールには最新バージョンを利用することをおすすめします
 testing-iso-warning = 現在テスト版 ISO を利用しています。テスト版 ISO では安定性や可用性を保障していません。
 tweaksbrowser-label = アプリ/チューニング
 appbrowser-label = アプリのインストール
 troubleshooting-label = トラブルシューティング
 launch-start-label = 起動時に表示
-welcome-title = ClaudeMods へようこそ！
+welcome-title = claudemods へようこそ！
 welcome-body =
     コミュニティに参加いただきありがとうございます！
 
-    ClaudeMods 開発チーム一同、情熱を持って開発した ClaudeMods を皆さまに楽しんでいただけることを願っています。下のリンクは、はじめてこの OS を利用する場合に役立ちます。ClaudeMods をぜひご活用ください。フィードバックもお待ちしております。
+    claudemods 開発チーム一同、情熱を持って開発した claudemods を皆さまに楽しんでいただけることを願っています。下のリンクは、はじめてこの OS を利用する場合に役立ちます。claudemods をぜひご活用ください。フィードバックもお待ちしております。

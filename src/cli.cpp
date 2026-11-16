@@ -58,7 +58,7 @@ const QList<std::pair<QString, QString>> kServerNames = {
 void usage()
 {
     const QString bin = QString::fromLatin1(ext::kBinaryName);
-    out << "ClaudeMods Hello " << APP_VERSION << "\n\n"
+    out << "claudemods hello " << APP_VERSION << "\n\n"
         << "Usage: " << bin << " [COMMAND]\n"
         << "       (no command starts the graphical welcome screen)\n\n"
         << "Commands:\n"
@@ -137,7 +137,7 @@ int handleFix(const QString &action)
         out.flush();
         actions::rankMirrors(kRun);
     } else if (action == QLatin1String("install-gaming")) {
-        out << bold(QStringLiteral("Installing ClaudeMods gaming packages...")) << "\n";
+        out << bold(QStringLiteral("Installing CachyOS gaming packages...")) << "\n";
         out.flush();
         actions::installGaming(kRun, sink);
     } else if (action == QLatin1String("show-kwin-debug")) {
@@ -402,10 +402,10 @@ int handleLaunch(const QString &app)
     QString appName;
     QString bin;
     if (app == QLatin1String("package-installer")) {
-        appName = QStringLiteral("ClaudeMods Package Installer");
+        appName = QStringLiteral("CachyOS Package Installer");
         bin = QString::fromLatin1(ext::kPackageInstallerBin);
     } else if (app == QLatin1String("kernel-manager")) {
-        appName = QStringLiteral("ClaudeMods Kernel Manager");
+        appName = QStringLiteral("CachyOS Kernel Manager");
         bin = QString::fromLatin1(ext::kKernelManagerBin);
     } else {
         usage();

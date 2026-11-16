@@ -292,7 +292,7 @@ Backend::Backend(QObject *parent)
     m_net = new QNetworkAccessManager(this);
     m_releaseText = QStringLiteral(
         "<big>Latest Release</big>\n\nRelease information is currently unavailable.\n\n"
-        "<a href=\"%1\">Visit the ClaudeMods blog for the latest release notes</a>")
+        "<a href=\"%1\">Visit the blog for the latest release notes</a>")
                         .arg(QString::fromLatin1(ext::kBlogUrl));
     fetchReleasePage();
 }

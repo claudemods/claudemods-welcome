@@ -189,32 +189,6 @@ Item {
 
             Item { Layout.fillWidth: true }
 
-            Row {
-                spacing: 10
-                ToolButton {
-                    icon.source: "qrc:/data/img/discord.svg"
-                    icon.color: "transparent"
-                    icon.width: 28
-                    icon.height: 28
-                    ToolTip.visible: hovered
-                    ToolTip.text: "Discord"
-                    Accessible.name: "Discord"
-                    onClicked: Backend.openUrl("discord")
-                }
-                ToolButton {
-                    icon.source: "qrc:/data/img/reddit.svg"
-                    icon.color: "transparent"
-                    icon.width: 28
-                    icon.height: 28
-                    ToolTip.visible: hovered
-                    ToolTip.text: "Reddit"
-                    Accessible.name: "Reddit"
-                    onClicked: Backend.openUrl("reddit")
-                }
-            }
-
-            Item { Layout.fillWidth: true }
-
             Label { text: I18n.t("launch-start-label") }
             Switch {
                 checked: Backend.autostart

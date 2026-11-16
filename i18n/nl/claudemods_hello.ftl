@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods – Hallo
-about-dialog-comments = Welkomstscherm van ClaudeMods
+about-dialog-title = claudemods – Hallo
+about-dialog-comments = Welkomstscherm van claudemods
 
 # Tweaks page
 tweaks = Aanpassingen
@@ -75,13 +75,13 @@ calamares-install-type = Calamares-installatietype
 offline-error = De installatie kan niet worden gestart: er is geen internetverbinding
 unsupported-hw-warning = U probeert te installeren op hardware die niet wordt ondersteund door de huidige ISO, uw installatie komt niet in aanmerking voor ondersteuning
 desktop-on-handheld-error = U probeert de Desktop-editie te installeren op een draagbaar apparaat. Gebruik alstublieft de Handheld-editie voor goede ondersteuning op deze hardware
-outdated-version-warning = U gebruikt een oudere versie van ClaudeMods ISO, overweeg alstublieft de nieuwste versie te gebruiken voor installaties
+outdated-version-warning = U gebruikt een oudere versie van CachyOS ISO, overweeg alstublieft de nieuwste versie te gebruiken voor installaties
 testing-iso-warning = U gebruikt een test-ISO, test-ISO's worden niet als stabiel en gebruiksklaar beschouwd
 tweaksbrowser-label = Programma's/Aanpassingen
 appbrowser-label = Programma's installeren
 launch-start-label = Tonen na opstarten
-welcome-title = Welkom op ClaudeMods!
+welcome-title = Welkom op claudemods!
 welcome-body =
     Wat fijn dat we je mogen verwelkomen in onze gemeenschap!
 
-    Wij, de ClaudeMods-ontwikkelaars, hopen dat je net zoveel plezier beleeft aan het gebruiken van ClaudeMods als wij dat hebben in de ontwikkeling ervan. Met behulp van onderstaande links kun je jezelf wegwijs maken in dit voor jou nieuwe besturingssysteem. Geniet ervan en stuur ons desnoods wat feedback.
+    Wij, de claudemods-ontwikkelaars, hopen dat je net zoveel plezier beleeft aan het gebruiken van claudemods als wij dat hebben in de ontwikkeling ervan. Met behulp van onderstaande links kun je jezelf wegwijs maken in dit voor jou nieuwe besturingssysteem. Geniet ervan en stuur ons desnoods wat feedback.

@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>ClaudeMods Hello</h1>
-  <p><strong>Welcome screen for ClaudeMods — Qt 6 / QML edition</strong></p>
+  <h1>claudemods Hello</h1>
+  <p><strong>Welcome screen for claudemods — Qt 6 / QML edition</strong></p>
 </div>
 
 A full port of the Rust + GTK3 *CachyOS Welcome* (`cachyos-hello`) to **C++ / Qt 6 with a QML user interface**.
@@ -11,8 +11,7 @@ language switching, autostart and the `fix | tweak | dns | launch` command line 
 ## Features
 
 **Welcome screen**
-- Welcome text, links to documentation, support and project resources (wiki, forum, software, development, donate),
-  Discord / Reddit buttons.
+- Welcome text and links to documentation, support and project resources (wiki, forum, donate, GitHub), plus the claudemods website (claudemodsreloaded.co.uk and github.com/claudemods in the About dialog),
 - Info pages: *Read me*, *Get involved* and a live *Release info* page built from the latest blog post.
 - 36 interface languages, switchable at runtime; the choice is remembered. Info pages are translated for 24 of them.
 - "Launch at start" autostart switch, About dialog, single-instance window.
@@ -24,13 +23,13 @@ language switching, autostart and the `fix | tweak | dns | launch` command line 
 **Apps / Tweaks** (installed systems)
 - Systemd tweaks, each toggled with a checkbox (installs the package if needed, enables/starts or stops/disables the
   unit, optionally uninstalls on disable): Profile-sync-daemon, Systemd-oomd, Bpftune, Bluetooth, Ananicy Cpp and
-  ClaudeMods Update (tray notifier).
+  Cachy Update (tray notifier).
 - Utilities: system update, remove orphans, rank mirrors, install gaming packages, install Winboat (also enables
   `docker.socket` and adds you to the `docker` group), install VRAM management (shown on Intel / AMD GPUs).
 - **Chris Titus Linux Tool** — opens Konsole and runs [Chris Titus Tech's Linux toolbox](https://christitus.com/linux)
   (`curl -fsSL https://christitus.com/linux | sh`). It is a TUI, so Konsole closes when you quit it. Because it downloads
   and runs a third-party script, the app asks for confirmation first. CLI: `claudemods-hello fix christitus`.
-- Application launchers for the ClaudeMods Package Installer and Kernel Manager when they are installed.
+- Application launchers for the claudemods Package Installer and Kernel Manager when they are installed.
 
 **Troubleshooting**
 - Clear package cache, remove the pacman db lock, reset pacman keyrings, reinstall all packages and, on KDE Wayland,
@@ -54,9 +53,9 @@ language switching, autostart and the `fix | tweak | dns | launch` command line 
 ## Credits
 
 - Original application: **CachyOS Welcome** by Vladislav Nepogodin and the CachyOS team (GPL-3.0). This is a Qt 6 / QML
-  port with ClaudeMods branding.
+  port with claudemods branding.
 - **Chris Titus Linux Tool** is created and maintained by [Chris Titus Tech](https://christitus.com/linux); it is a
-  third-party project that this app only launches. It is not part of, or reviewed by, ClaudeMods.
+  third-party project that this app only launches. It is not part of, or reviewed by, claudemods.
 - DNS over HTTPS / QUIC support uses [blocky](https://github.com/0xERR0R/blocky).
 
 ## Build
@@ -70,7 +69,7 @@ cmake --build build
 sudo cmake --install build        # installs to /usr (binary, .desktop, icon, helper scripts)
 ```
 
-Arch / ClaudeMods: `packaging/PKGBUILD`.
+Arch / claudemods: `packaging/PKGBUILD`.
 
 Run `claudemods-hello` for the GUI, or `claudemods-hello --help` for the CLI.
 
@@ -125,4 +124,14 @@ file, `src/externals.h` (and `data/preferences.json` for the web links) so you c
 
 Written as a source-level port; it has **not been compiled or run yet** (no Qt toolchain was available while writing it).
 Expect to fix a few compile errors on the first build, and test the privileged paths (tweaks, DNS, installer) on a real
-ClaudeMods/CachyOS system.
+claudemods/CachyOS system.
+
+## Look
+
+The window uses a dark palette over a space-nebula background (`data/img/background.webp`). WebP needs the Qt image
+format plugin (`qt6-imageformats` on Arch, already listed in the PKGBUILD).
+
+## Links
+
+- Website: https://claudemodsreloaded.co.uk
+- Software: https://github.com/claudemods

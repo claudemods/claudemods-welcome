@@ -1,6 +1,6 @@
 # About dialog
-about-dialog-title = ClaudeMods Hello
-about-dialog-comments = Màn hình chào mừng của ClaudeMods
+about-dialog-title = claudemods Hello
+about-dialog-comments = Màn hình chào mừng của claudemods
 
 # Tweaks page
 tweaks = chỉnh sửa
@@ -82,13 +82,13 @@ calamares-install-type = Calamares install type
 offline-error = Không thể cài đặt online! Không có kết nối mạng
 unsupported-hw-warning = Bạn đang cố cài đặt lên phần cứng không được hỗ trợ bởi ISO đang dùng, bạn sẽ không được hỗ trợ
 desktop-on-handheld-error = Bạn đang cố cài đặt phiên bản Desktop lên thiết bị cầm tay. Vui lòng sử dụng phiên bản Handheld để được hỗ trợ đúng cách trên phần cứng này
-outdated-version-warning = Bạn đang dùng file ISO cũ của ClaudeMods, hãy cân nhắc sử dụng bản mới nhất để cài đặt
+outdated-version-warning = Bạn đang dùng file ISO cũ của CachyOS, hãy cân nhắc sử dụng bản mới nhất để cài đặt
 testing-iso-warning = Bạn đang sử dụng ISO bản thử nghiệm, bản thử nghiệm không được ổn định và sử dụng
 tweaksbrowser-label = Phần mềm/Tinh chỉnh
 appbrowser-label = Cài đặt phần mềm
 launch-start-label = Xuất hiện thông báo này khi khởi động
-welcome-title = Chào mừng tới ClaudeMods!
+welcome-title = Chào mừng tới claudemods!
 welcome-body =
     Cảm ơn bạn rất nhiều khi đã tham gia cộng đồng của chúng tôi!
 
-    Chúng tôi, những người phát triển nên ClaudeMods, mong rằng bạn sẽ cảm thấy tuyệt vời khi sử dụng ClaudeMods cũng giống như chúng tôi rất vui khi xây dựng lên nó. Các đường dẫn dưới đây sẽ giúp bạn bắt đầu với hệ điều hành mới này. Vì vậy cứ thoải mái sử dụng và tận hưởng đi, và đừng ngần ngại gửi phản hồi cho chúng tôi nhé.
+    Chúng tôi, những người phát triển nên claudemods, mong rằng bạn sẽ cảm thấy tuyệt vời khi sử dụng claudemods cũng giống như chúng tôi rất vui khi xây dựng lên nó. Các đường dẫn dưới đây sẽ giúp bạn bắt đầu với hệ điều hành mới này. Vì vậy cứ thoải mái sử dụng và tận hưởng đi, và đừng ngần ngại gửi phản hồi cho chúng tôi nhé.

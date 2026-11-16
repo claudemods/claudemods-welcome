@@ -1,6 +1,6 @@
 # O dialogu
-about-dialog-title = ClaudeMods Vítejte
-about-dialog-comments = Úvodní obrazovka pro ClaudeMods
+about-dialog-title = claudemods Vítejte
+about-dialog-comments = Úvodní obrazovka pro claudemods
 
 # Stránka s vylepšenímy
 tweaks = Vylepšení
@@ -76,13 +76,13 @@ calamares-install-type = Typ Instalace Calamares
 offline-error = Nedá se spustit online instalace! Žádné internetové připojení
 unsupported-hw-warning = Pokoušíte se instalovat na hardware, který není podporován aktuální verzí ISO, vaše instalace nebude mít nárok na podporu
 desktop-on-handheld-error = Pokoušíte se nainstalovat desktopovou edici na přenosné zařízení. Pro správnou podporu na tomto hardwaru prosím použijte edici Handheld
-outdated-version-warning = Používáte starší verzi ClaudeMods ISO, zvažte prosím použití nejnovější verze pro instalace
+outdated-version-warning = Používáte starší verzi CachyOS ISO, zvažte prosím použití nejnovější verze pro instalace
 testing-iso-warning = Používáte testovací ISO, testovací ISO nejsou považovány za stabilní a připravené k použití
 tweaksbrowser-label = Aplikacie/Vylepšení
 appbrowser-label = Instalovat Aplikace
 launch-start-label = Spustit při startu
-welcome-title = Vitejte v ClaudeMods!
+welcome-title = Vitejte v claudemods!
 welcome-body =
     Děkujeme, že jste se přidali k naší komunitě!
 
-    My, vývojáři ClaudeMods, doufáme, že budete používat ClaudeMods se stejným nadšením, s jakým ho my vytváříme. Odkazy níže vám pomůžou začíť s vaším novým operačním systémem. Užijte si zážitek a neváhajte nám poslat vaší zpětnou vazbu.
+    My, vývojáři claudemods, doufáme, že budete používat claudemods se stejným nadšením, s jakým ho my vytváříme. Odkazy níže vám pomůžou začíť s vaším novým operačním systémem. Užijte si zážitek a neváhajte nám poslat vaší zpětnou vazbu.
