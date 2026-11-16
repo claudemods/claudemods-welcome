@@ -420,13 +420,7 @@ void Backend::emitMessage(int type, const QString &text, const QString &title)
 
 bool Backend::guiRunCommand(const QString &command, bool escalate)
 {
-    const QString scripts = QString::fromLatin1(ext::kScriptsDir);
-    QStringList args;
-    if (escalate) {
-        args << QStringLiteral("-s") << QStringLiteral("pkexec %1/rootshell.sh").arg(scripts);
-    }
-    args << command + QStringLiteral("; read -p 'Press enter to exit'");
-    return utils::runProcess(scripts + QStringLiteral("/terminal-helper"), args) == 0;
+    return utils::runInTerminal(command, escalate);
 }
 
 void Backend::setInstallerBusy(bool busy)

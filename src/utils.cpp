@@ -1,5 +1,7 @@
 #include "utils.h"
 
+#include "externals.h"
+
 #include <QDir>
 #include <QFile>
 #include <QFileInfo>
@@ -138,6 +140,36 @@ bool hasIntelOrAmdGpu()
         }
     }
     return false;
+}
+
+} // namespace utils
+
+namespace utils {
+
+QString scriptsDir()
+{
+    const QString installed = QString::fromLatin1(ext::kScriptsDir);
+    if (QFile::exists(installed + QStringLiteral("/terminal-helper"))) {
+        return installed;
+    }
+#ifdef CLAUDEMODS_SOURCE_DIR
+    const QString dev = QStringLiteral(CLAUDEMODS_SOURCE_DIR "/scripts");
+    if (QFile::exists(dev + QStringLiteral("/terminal-helper"))) {
+        return dev; // running from the build tree without `cmake --install`
+    }
+#endif
+    return installed;
+}
+
+bool runInTerminal(const QString &command, bool escalate)
+{
+    const QString dir = scriptsDir();
+    QStringList args = {dir + QStringLiteral("/terminal-helper")};
+    if (escalate) {
+        args << QStringLiteral("-s") << QStringLiteral("pkexec bash %1/rootshell.sh").arg(dir);
+    }
+    args << command + QStringLiteral("; read -p 'Press enter to exit'");
+    return runProcess(QStringLiteral("bash"), args) == 0;
 }
 
 } // namespace utils

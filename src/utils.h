@@ -24,6 +24,11 @@ int runProcess(const QString &program, const QStringList &args, bool forwardOutp
 
 /// `bash -c cmd`, optionally through pkexec.
 bool runCmd(const QString &cmd, bool escalate, bool forwardOutput = true);
+/// Directory holding terminal-helper and rootshell.sh (installed copy, or the source tree for dev runs).
+QString scriptsDir();
+/// Runs `command` in a terminal window (the user presses enter to close it); `escalate` = as root via pkexec.
+bool runInTerminal(const QString &command, bool escalate);
+
 /// `pkexec args...` (arguments passed directly, no shell).
 bool pkexecCmd(const QStringList &args);
 bool spawnDetached(const QString &path);

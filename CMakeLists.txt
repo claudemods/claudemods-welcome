@@ -16,7 +16,11 @@ file(GLOB_RECURSE HELLO_FTL   RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR
 file(GLOB_RECURSE HELLO_PAGES RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/data/pages/*")
 file(GLOB         HELLO_IMG   RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/data/img/*.svg" "${CMAKE_SOURCE_DIR}/data/img/*.webp")
 file(GLOB         HELLO_ICONS RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/icons/*.svg")
-set(HELLO_RESOURCE_FILES data/preferences.json ${HELLO_FTL} ${HELLO_PAGES} ${HELLO_IMG} ${HELLO_ICONS})
+file(GLOB         HELLO_THUMBS  RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/data/img/wallpapers/*.jpg")
+file(GLOB         HELLO_COLORS  RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/data/color-schemes/*.colors")
+file(GLOB_RECURSE HELLO_SYSTOOL RELATIVE "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/data/systemtool/*")
+set(HELLO_RESOURCE_FILES data/preferences.json ${HELLO_FTL} ${HELLO_PAGES} ${HELLO_IMG} ${HELLO_ICONS}
+    ${HELLO_THUMBS} ${HELLO_COLORS} ${HELLO_SYSTOOL})
 
 qt_add_executable(claudemods-hello
     src/main.cpp
@@ -28,6 +32,7 @@ qt_add_executable(claudemods-hello
     src/logger.h         src/logger.cpp
     src/networkmanager.h src/networkmanager.cpp
     src/systemd.h        src/systemd.cpp
+    src/systemtool.h     src/systemtool.cpp
     src/tweak.h          src/tweak.cpp
     src/utils.h          src/utils.cpp
     src/externals.h
@@ -51,6 +56,9 @@ qt_add_qml_module(claudemods-hello
         qml/pages/TweaksPage.qml
         qml/pages/TroubleshootingPage.qml
         qml/pages/DnsPage.qml
+        qml/pages/SystemToolPage.qml
+        qml/pages/ThemesView.qml
+        qml/pages/ActionsView.qml
 )
 
 qt_add_resources(claudemods-hello "hello_data"
@@ -59,7 +67,9 @@ qt_add_resources(claudemods-hello "hello_data"
     FILES ${HELLO_RESOURCE_FILES}
 )
 
-target_compile_definitions(claudemods-hello PRIVATE APP_VERSION="${PROJECT_VERSION}")
+target_compile_definitions(claudemods-hello PRIVATE
+    APP_VERSION="${PROJECT_VERSION}"
+    CLAUDEMODS_SOURCE_DIR="${CMAKE_SOURCE_DIR}")
 target_link_libraries(claudemods-hello PRIVATE
     Qt6::Core Qt6::Gui Qt6::Qml Qt6::Quick Qt6::QuickControls2 Qt6::DBus Qt6::Network Qt6::Concurrent)
 
@@ -68,5 +78,7 @@ install(TARGETS claudemods-hello RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 install(FILES claudemods-hello.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
 install(FILES icons/org.claudemods.hello.svg
         DESTINATION ${CMAKE_INSTALL_DATADIR}/icons/hicolor/scalable/apps)
+install(DIRECTORY data/wallpapers/
+        DESTINATION ${CMAKE_INSTALL_DATADIR}/claudemods-hello/wallpapers)
 install(PROGRAMS scripts/terminal-helper scripts/rootshell.sh
         DESTINATION ${CMAKE_INSTALL_DATADIR}/claudemods-hello/scripts)

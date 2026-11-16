@@ -50,6 +50,44 @@ language switching, autostart and the `fix | tweak | dns | launch` command line 
 - `dns` — set, set-custom, reset, list-connections, list-servers, test-latency
 - `launch` — package-installer, kernel-manager
 
+## claudemods System Tool
+
+Apps/Tweaks → **claudemods System Tool** opens one hub with six sections (each has a back arrow, hub → Apps/Tweaks).
+It is the old claudemods Arch System Tool suite rebuilt as part of this app:
+
+| Section | What it does |
+|---|---|
+| **Themes** | Photo buttons for 9 desktop wallpapers (`plasma-apply-wallpaperimage`) and named colour buttons with a two-tone swatch (`plasma-apply-colorscheme`). Schemes install themselves when you click them; *Install all colour schemes* replaces the old "Configure Colours" unzip. Schemes you add to `~/.local/share/color-schemes` show up automatically. |
+| **Updates & Cleanup** | System update, clear package cache, clear user cache/trash, lock / unlock the installed kernel packages. |
+| **GPU Drivers** | Enable / disable multilib, Intel, AMD and NVIDIA (open, dkms, LTS) driver sets. 32-bit libraries are added automatically when multilib is on. |
+| **Repositories** | Arch testing repos, KDE unstable, multilib-testing, back to stable. |
+| **Backup** | penguins-eggs: install, configure, create a clone ISO. |
+| **Tools** | **Add AppImage to the menu** (extracts the image, installs its icon and writes a `.desktop` entry), Konsole, Dolphin, System Monitor, Plasma Overview, restart Plasma shell, Bauh and Stacer (shown only when installed), website and GitHub links. |
+
+It is data driven, so adding a tool never needs C++:
+
+- `data/systemtool/actions.json` – categories and actions (title, description, confirmation text, script, `escalate`, …)
+- `data/systemtool/themes.json` – wallpapers and the friendly colour names
+- `data/systemtool/scripts/*.sh` – the scripts (`_lib.sh` holds the shared pacman.conf helpers)
+
+What changed compared with the 2024 suite:
+
+- Everything runs from one app; no more separate `*.bin` programs, hard-coded `/opt/...` paths or bundled AppImages.
+- **No sudo password handling.** The old tools piped a typed password into `sudo -S`; root actions now go through `pkexec`
+  and the commands that call `sudo` themselves prompt inside the terminal.
+- **Safer cleanup.** "Clear cache" used to `rm -rf /var/cache` and `/tmp` and a hard-coded `/home/lancaster`; it now uses
+  `paccache` and only empties your own `~/.cache` and Trash (after a confirmation).
+- **Safer pacman.conf edits.** Repositories are enabled/disabled in place (testing repos are inserted before the stable ones),
+  nothing is rewritten wholesale, a `pacman.conf.bak` is kept, and multilib is no longer switched off when you go back to stable.
+- **Kernel lock** works on whatever kernels are installed (not just `linux-zen`) and edits `IgnorePkg` correctly.
+- **GPU driver sets** use current Arch package names (for example `nvidia-open-dkms`, `vulkan-radeon`, `intel-media-driver`);
+  discontinued or AUR-only packages from the old lists were dropped. Very old NVIDIA cards may need a legacy driver from the AUR.
+- Not carried over: the KDE-dev 6.2 zip setup, the Calamares/ISO fix scripts, the home-made terminal emulator (use Konsole),
+  the unfinished "Build An ISO" / "Upgrade To AKGE" buttons and the sound-set files.
+
+Wallpapers live in `data/wallpapers` (installed to `/usr/share/claudemods-hello/wallpapers`; running from the build tree finds them
+in the source folder). Thumbnails for the photo buttons are bundled in the app.
+
 ## Credits
 
 - Original application: **CachyOS Welcome** by Vladislav Nepogodin and the CachyOS team (GPL-3.0). This is a Qt 6 / QML

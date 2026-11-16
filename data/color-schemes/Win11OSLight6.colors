@@ -1,0 +1,54 @@
+Lancaster Bottles recommendation as a user of bottles
+i have had much fun using the application for gaming or other windows applications
+i find the best way to setup bottles for Game launchers such as rockstar launcher
+is to setup a application bottle instead of a gaming bottle as this doesnt have some of the dependencies for the application launchers
+find useful information below
+information below provided by
+https://usebottles.com/
+
+Application ready
+
+Bottles' Application Environment comes preconfigured to support a large set of Windows video games on Linux.
+
+Thanks to our installers you can have immediate access to the most famous game stores (e.g. Epic Games Store, EA Launcher, Battle.net etc.) and then play your favorite games, just like on Windows.
+
+Bottles introduces a new way to handle Windows prefixes using environments, a combination of ready-to-use settings, libraries and dependencies.
+
+Choose between Gaming and Software environment based on the type of software you want to start.
+
+More advanced users can choose the Custom environment to configure the bottle on their own.
+
+
+Highly tweakable
+
+Customize your Windows environment with ease.
+
+Choose whether to use dxvk, vkd3d, gamemode, esync, fsync or other, Bottles will handle it all for you.
+
+Change runners on the fly or install new ones for all your tests.
+
+
+Integrated dependency manager
+
+Windows software need dependencies to work properly.
+
+Bottles comes with a powerful and easy-to-use dependency manager that automates this task.
+
+Just look for the package you need and then "install", Bottles will take care of everything for you.
+
+
+Easy to restore
+
+The Snapshots manager allows you to easily restore a previous state of your bottle.
+
+If enabled, Bottles will automatically create a new snapshot when you install a new dependency.
+
+If something goes wrong, go to the Snapshots section of your bottle and restore the previous state.
+
+Safe. Sandboxed.
+
+Your bottles are isolated from the system and will only hit your personal files when you decide.
+
+The full-sandbox is provided and pre-configured only using the Flatpak package (highly recommended).
+
+All other packages still have access to the partial sandbox which isolates the bottle files and prevents them from accessing your homedir.

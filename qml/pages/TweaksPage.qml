@@ -96,6 +96,12 @@ Item {
                         spacing: 10
 
                         HelloButton {
+                            label: "claudemods System Tool"
+                            tip: "Themes, updates, GPU drivers, repositories, backups and desktop tools"
+                            highlighted: true
+                            onClicked: ApplicationWindow.window.showPage("systemtool")
+                        }
+                        HelloButton {
                             label: I18n.t("update-system-title")
                             onClicked: Backend.runAction("update-system")
                         }

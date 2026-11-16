@@ -1,0 +1,28 @@
+{
+  "wallpapers": [
+    { "id": "mustang",      "name": "Mustang",      "file": "mustang.jpg" },
+    { "id": "torpedo",      "name": "Torpedo",      "file": "torpedo.jpg" },
+    { "id": "mosquito",     "name": "Mosquito",     "file": "mosquito.jpg" },
+    { "id": "lancaster",    "name": "Lancaster",    "file": "lancaster.jpg" },
+    { "id": "hawker",       "name": "Hawker",       "file": "hawker.jpg" },
+    { "id": "spitfire",     "name": "SpitFire",     "file": "spitfire.jpg" },
+    { "id": "plasma-light", "name": "Plasma Light", "file": "plasma-light.png" },
+    { "id": "plasma-dark",  "name": "Plasma Dark",  "file": "plasma-dark.png" },
+    { "id": "reef",         "name": "Reef",         "file": "reef.png" }
+  ],
+  "colors": [
+    { "id": "Mosquito",      "name": "Mosquito" },
+    { "id": "Win11OSLight5", "name": "Lancaster" },
+    { "id": "Hawker",        "name": "Hawker" },
+    { "id": "SpitFire",      "name": "SpitFire" },
+    { "id": "BreezeLight",   "name": "Breeze Light", "system": true, "fallback": "#eff0f1", "fallbackAccent": "#3daee9" },
+    { "id": "BreezeDark",    "name": "Breeze Dark",  "system": true, "fallback": "#31363b", "fallbackAccent": "#3daee9" },
+    { "id": "Win11OSLight7", "name": "Purple" },
+    { "id": "Win11OSLight3", "name": "Black" },
+    { "id": "Win11OSLight4", "name": "Green" },
+    { "id": "Hawkerblue",    "name": "Hawker Blue" },
+    { "id": "Win11OSLight",  "name": "Win11 Light" },
+    { "id": "Win11OSLight6", "name": "Win11 Light 6" },
+    { "id": "Win11OSLight8", "name": "Win11 Light 8" }
+  ]
+}

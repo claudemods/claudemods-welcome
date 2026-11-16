@@ -78,6 +78,15 @@ ApplicationWindow {
         }
     }
 
+    Connections {
+        target: SystemTool
+
+        function onMessage(type, text, title) {
+            win.messageQueue.push({ type: type, text: text, title: title })
+            win.showNextMessage()
+        }
+    }
+
     header: ToolBar {
         background: Rectangle { color: "#cc06130f" }
         RowLayout {
@@ -151,6 +160,12 @@ ApplicationWindow {
             active: !Backend.isIso && Backend.hasNmcli && win.page === "dns"
             visible: active
             sourceComponent: DnsPage {}
+        }
+        Loader {
+            anchors.fill: parent
+            active: !Backend.isIso && win.page === "systemtool"
+            visible: active
+            sourceComponent: SystemToolPage {}
         }
     }
 
