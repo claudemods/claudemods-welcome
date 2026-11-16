@@ -94,19 +94,6 @@ ApplicationWindow {
             anchors.leftMargin: 12
             anchors.rightMargin: 6
 
-            ColumnLayout {
-                spacing: 0
-                visible: win.page !== "systemtool" // the System Tool page has its own branding
-                Label {
-                    text: "claudemods hello"
-                    font.bold: true
-                }
-                Label {
-                    text: "claudemods rolling"
-                    font.pointSize: Qt.application.font.pointSize * 0.85
-                    opacity: 0.7
-                }
-            }
             Item { Layout.fillWidth: true }
             ToolButton {
                 text: "ⓘ"
