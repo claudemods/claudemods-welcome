@@ -10,17 +10,9 @@ language switching, autostart and the `fix | tweak | dns | launch` command line 
 
 ## Screenshots
 
-**Main page**
+![Main page, Apps/Tweaks and the claudemods System Tool](docs/screenshots/overview.jpg)
 
-![Main page](docs/screenshots/main-page.jpg)
-
-**Apps / Tweaks**
-
-![Apps / Tweaks](docs/screenshots/apps-tweaks.jpg)
-
-**claudemods System Tool: Themes**
-
-![claudemods System Tool: Themes](docs/screenshots/system-tool-themes.jpg)
+*Left to right: main page · Apps/Tweaks · claudemods System Tool (Themes)*
 
 ## Features
 
